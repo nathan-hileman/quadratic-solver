@@ -1,3 +1,3 @@
 # quadratic-solver
 
-A command-line program for solving quadratic equations
+A command-line program written in C for solving quadratic equations
