@@ -1,10 +1,11 @@
 Author: Ali Itani
 
 # IEEE Floating Point Ranges:
-    <ul>
-        <li> for the range like we talked in class we'll go with 8 if we want more or less we can change it later in development.
-        <li> we can set up our code to have a feature to be able to change the floating point range from ex: 8 to 7 (if need be).
-    </ul>
+   
+   <ol>
+        <li> for the range like we talked in class we'll go with 8 if we want more or less we can change it later in development. </li>
+        <li> we can set up our code to have a feature to be able to change the floating point range from ex: 8 to 7 (if need be). </li>
+    </ol>
 
 # IEEE Floating Point Precision:
     <ul>
