@@ -10,6 +10,7 @@ Author: Ali Itani
 # IEEE Floating Point Precision:
    <ol>
       <li>i was reading online (link: https://math.stackexchange.com/questions/311382/solving-a-quadratic-equation-with-precision-when-using-floating-point-variables) we can use the Citardauq Formula to have higher precision and the roots to a point where there is no loss of precision in one of the roots and also near high precision for the other.
-   </li>
+    </li>
    </ol>
     
+ <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   

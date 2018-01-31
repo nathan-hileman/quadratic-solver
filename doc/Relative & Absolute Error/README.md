@@ -9,3 +9,5 @@ Author: Ali Itani
     <li> The percent error is the relative error expressed in terms of per 100. </li>
 </ol>
     <p><strong> they have the formulas for each one there that we can use when we start development.</strong></p>
+
+ <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   

@@ -1,3 +1,0 @@
-The stories excel file can be found here: https://wmich-my.sharepoint.com/:x:/g/personal/nbb4891_wmich_edu/EaBbligD5shLlOH58wjQ-QABpozrMFu8hjvotgzLs5st8w?e=6Pghtd
-The TPS reports can be found here: https://wmich-my.sharepoint.com/:f:/g/personal/nbb4891_wmich_edu/Eqx8cTH8ltVGpTfet1HSeEYBKlS9j0BH9PQzJujJ-9NjNQ?e=8eDS7p
-This week's (week 2) TPS report can be found here:https://wmich-my.sharepoint.com/:x:/g/personal/nbb4891_wmich_edu/EaBbligD5shLlOH58wjQ-QABpozrMFu8hjvotgzLs5st8w?e=6Pghtd
