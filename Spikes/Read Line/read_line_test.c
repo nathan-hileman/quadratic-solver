@@ -10,6 +10,11 @@
 char *read_line();
 void write_to_log(char *input);
 
+int main()
+{
+    read_line();
+}
+
 /**
 * Prompts the user for input and reads the line that was inputted.  
 * 
