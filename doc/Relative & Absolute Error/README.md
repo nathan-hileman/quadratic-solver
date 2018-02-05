@@ -1,5 +1,6 @@
 Author: Ali Itani
-
+Dir Description: N/A
+Overview:
 # For Relative Error & Absolute Error:
 <ol>
     <li> I was reading on Wikipedia (link: https://en.wikipedia.org/wiki/Approximation_error)

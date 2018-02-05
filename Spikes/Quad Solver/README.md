@@ -1,3 +1,7 @@
+Author(s): 
+Dir Description: a spike on the quad solver
+Overview:
+
 Quad Solver
 ===========
 

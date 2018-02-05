@@ -1,3 +1,7 @@
+Author(s):
+Dir Description: A finished version of the read line function
+
+Overview:
 Read Line
 ===========
 read_line.c

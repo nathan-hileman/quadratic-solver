@@ -1,4 +1,7 @@
-Author: Xavier Gray
+Author(s): Xavier Gray
+Dir Description: A directory that holds details on programming standards
+
+Overview:
 
 Compiler options:
 	I have looked into C compiler options and have decided on the following
@@ -14,5 +17,11 @@ Compiler options:
 Programming Standard:
 	Looking at different C coding standards, the one that makes the most sense is the GNU c programming standard. (https://www.gnu.org/prep/standards/html_node/Writing-C.html)
 	Feel free to skim it. 
+	
+Readme Structure:
+	Readmes are to be structured as follows:
+		Author(s): the author(s) of the readme
+		Dir Description: A description of the directory itself and a its purpose
+		Overview: A general overview of the code/content in the dir
 
  <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
