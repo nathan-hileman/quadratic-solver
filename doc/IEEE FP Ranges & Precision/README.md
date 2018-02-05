@@ -1,4 +1,4 @@
-Author: Ali Itani
+Author: Ali Itani, Xavier Gray
 Dir Description: N/A
 Overview:
 # IEEE Floating Point Ranges:
@@ -13,5 +13,7 @@ Overview:
       <li>i was reading online (link: https://math.stackexchange.com/questions/311382/solving-a-quadratic-equation-with-precision-when-using-floating-point-variables) we can use the Citardauq Formula to have higher precision and the roots to a point where there is no loss of precision in one of the roots and also near high precision for the other.
     </li>
    </ol>
-    
+# Checking Inf, NaN, and normalized numbers:
+	See this page: https://www.gnu.org/software/libc/manual/html_node/Floating-Point-Classes.html#Floating-Point-Classes
+	This page has macros for checking all of it
  <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
