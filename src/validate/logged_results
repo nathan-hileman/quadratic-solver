@@ -1,0 +1,81 @@
+
+
+Testing
+Line:1 2.5 2.3124
+Result: Numbers are valid they are: 1.000000 2.500000 2.312400
+
+
+
+
+Testing
+Line:1 2.5 2.3124
+Result: Numbers are valid they are: 1.000000 2.500000 2.312400
+
+
+
+
+Testing
+Line:1 2.5      2.3124
+Result: Numbers are valid they are: 1.000000 2.500000 2.312400
+
+
+
+
+Testing
+Line, as sent by cmd line:1 abc      2.3124
+Result: Error: Not a number, character was inserted instead.
+
+
+Testing
+Line, as sent by cmd line:1 23123 2.3124 ab c
+Result: Numbers are valid they are: 1.000000 23123.000000 2.312400
+
+
+
+
+Testing
+Line, as sent by cmd line:2 4 6 7 123 42 ab da something long
+Result: Numbers are valid they are: 2.000000 4.000000 6.000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2^!@#$ asdb 234
+Result: Error: Not a number, character was inserted instead.
+
+
+Testing
+Line, as sent by cmd line:2^!@#$ 2123
+Result: Error: Missing arguments of a, b, c.
+
+
+
+
+Testing
+Line, as sent by cmd line:2^!@#$ 2123 33
+Result: Error: Not a number, character was inserted instead.
+
+
+Testing
+Line, as sent by cmd line:
+Result: Error: Line is empty.
+
+
+Testing
+Line, as sent by cmd line:2016 2017 2018
+Result: Numbers are valid they are: 2016.000000 2017.000000 2018.000000
+
+
+Testing
+Line, as sent by cmd line:2016 2017 2018.1234567
+Result: Numbers are valid they are: 2016.000000 2017.000000 2018.1234567000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.2342 2018.1234567
+Result: Numbers are valid they are: 2016.1212400 2017.2342000 2018.1234567
+
+

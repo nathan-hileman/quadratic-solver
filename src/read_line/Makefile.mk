@@ -1,6 +1,6 @@
 CC = gcc
 
-CFLAGS = -Wall -pedantic -std=c99
+CCFLAGS = -Wall -pedantic -std=c99
 
 all: read_line
 
