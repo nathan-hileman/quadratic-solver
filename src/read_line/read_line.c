@@ -6,9 +6,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
-char *read_line();
-void write_to_log(char *input);
+#include "read_line.h"
 
 /**
 * Prompts the user for input and reads the line that was inputted.  
@@ -21,19 +19,5 @@ char *read_line()
     printf("Enter values for a, b, and c: ");
     fgets(input, sizeof(char) * 100, stdin);    // read the line of input
 
-    write_to_log(input);
-
     return input;
 }
-
-/**
-* Writes input to log file
-*/
-void write_to_log(char *input)
-{
-    FILE * log;
-    log = fopen("log.txt", "a");
-    fprintf(log, "\nInput returned form read_line(): %s", input);
-    fclose(log);
-}
-

@@ -2,9 +2,9 @@ CC = gcc
 CCFLAGS = -Wall -pedantic -std=c99
 
 debug: CCFLAGS += DDEBUG -g
-debug: read_line
+debug: log_output
 
-read_line.o: read_line.c read_line.h
+log_output.o: log_output.c log_output.h
 
 clean:
-    -rm -f read_line.o
+    -rm log_output.o
