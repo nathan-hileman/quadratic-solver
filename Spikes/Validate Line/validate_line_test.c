@@ -34,7 +34,7 @@ int is_number(char * result) {
 
 // validator function that checks for possible errors and reports back to user with a result
 
-int check_validation(char * line, int n, double * a, double * b, double * c) {
+int check_validation(char * line) {
 
 
     // checks if line is empty using [is_empty] function
@@ -50,6 +50,7 @@ int check_validation(char * line, int n, double * a, double * b, double * c) {
 
     char * numbers = strtok(line, " ");
     char * results[3];
+    double a, b, c;
 
     int i = 0;
 
@@ -72,11 +73,11 @@ int check_validation(char * line, int n, double * a, double * b, double * c) {
     
    if (is_number(results[0]) && is_number(results[1]) && is_number(results[2])) {
         
-        *a = atof(results[0]);
-        *b = atof(results[1]);
-        *c = atof(results[2]);
+        a = atof(results[0]);
+        b = atof(results[1]);
+        c = atof(results[2]);
         
-        printf("Numbers are valid they are: %.7lf %.7lf %.7lf\n", a[0], b[0], c[0]);
+        printf("Numbers are valid they are: %.7lf %.7lf %.7lf\n", a, b, c);
 
     } else {
 
@@ -94,17 +95,14 @@ int check_validation(char * line, int n, double * a, double * b, double * c) {
 int main(int argc, char ** argv) {
     
     // testing
-    int n = 100;
-    double a = 0.0;
-    double b = 0.0;
-    double c = 0.0;
     char * line = (char *) malloc(100);
+    
     strcat(line, "2016.12124 2017.0e6 250000.0e-5");
 
     printf("\n\nTesting\nLine, as sent by cmd line:");
     printf("%s\n", line);
     printf("Result: ");
-    check_validation(line, n, &a, &b, &c);
+    check_validation(line);
     
     printf("\n\n");
 

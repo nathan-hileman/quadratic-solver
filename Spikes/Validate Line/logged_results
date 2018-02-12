@@ -79,3 +79,52 @@ Line, as sent by cmd line:2016.12124 2017.2342 2018.1234567
 Result: Numbers are valid they are: 2016.1212400 2017.2342000 2018.1234567
 
 
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 1e9
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 1000000000.0000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 -1e9
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 -1000000000.0000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 1e-9
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 0.0000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 2500.0e-5
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 0.0000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 20.1e-9
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 0.0000000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 2500.0e-5
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 0.0250000
+
+
+
+
+Testing
+Line, as sent by cmd line:2016.12124 2017.0e6 250000.0e-5
+Result: Numbers are valid they are: 2016.1212400 2017000000.0000000 2.5000000
+
+
