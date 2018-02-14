@@ -6,7 +6,7 @@
 #include <stdlib.h> // needed
 #include <string.h> // for strtok() and more
 #include <math.h> // for isnan()
-
+#include "validate_line.h"
 // function that checks if an input is empty
 
 int is_empty(char * line) { 
