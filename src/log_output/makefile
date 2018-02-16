@@ -5,6 +5,7 @@ debug: CCFLAGS += DDEBUG -g
 debug: log_output
 
 log_output.o: log_output.c log_output.h
+    $(CC) $(CCFLAGS) -c log_output.c
 
 clean:
-    -rm log_output.o
+	-rm -rf log_output.o

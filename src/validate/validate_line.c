@@ -26,7 +26,7 @@ int is_number(char * result) {
 
     if(strlen(ptr) != 0) {
         printf("Error: Not a number, character was inserted instead.\n");
-        exit(-1); // or return -1 doesnt matter, i like exit more...
+        return -1; // or return -1 doesnt matter, i like exit more...
     }
 
     return 1;
@@ -42,7 +42,7 @@ int check_validation(char * line, int n, double * a, double * b, double * c) {
     if ( is_empty(line) ){
         
        printf("Error: Line is empty.\n");
-        exit(-1); // or return -1 doesnt matter, i like exit more...
+        return -1; // or return -1 doesnt matter, i like exit more...
    }
 
 
@@ -91,7 +91,7 @@ int check_validation(char * line, int n, double * a, double * b, double * c) {
 
 
 // this main is just for testing, should be removed later on!
-int main(int argc, char ** argv) {
+/*int main(int argc, char ** argv) {
     
     // testing
     int n = 100;
@@ -109,4 +109,4 @@ int main(int argc, char ** argv) {
     printf("\n\n");
 
     return 0;
-}
+}*/

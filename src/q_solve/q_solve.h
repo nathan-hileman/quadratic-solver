@@ -1,0 +1,1 @@
+int q_solve(double *a, double *b, double *c)

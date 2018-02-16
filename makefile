@@ -5,5 +5,5 @@ deploy:
 	cd src; make quad_solver;
 
 clean:
-	-rm quad_solver
+	-rm -rf quad_solver
 	cd src; make clean
