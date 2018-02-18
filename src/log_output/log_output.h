@@ -1,1 +1,1 @@
-int log_output(char* message);
+int log_output(char * message);
