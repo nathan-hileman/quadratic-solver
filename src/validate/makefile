@@ -7,8 +7,8 @@ all: validate_line
 debug: CCFLAGS += DDEBUG -g
 debug: validate_line
 
-validate_line: validate_line.c
-	$(CC) $(CCFLAGS) validate_line.c -o validate_line
+validate_line.o: validate_line.c
+	$(CC) $(CCFLAGS) -c validate_line.c
 
 clean:
-	rm validate_line
+	rm -rf validate_line.o
