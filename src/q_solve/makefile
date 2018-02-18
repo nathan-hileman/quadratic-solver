@@ -9,3 +9,4 @@ q_solve.o: q_solve.c q_solve.h
 
 clean:
 	-rm -rf q_solve.o
+

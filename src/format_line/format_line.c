@@ -1,5 +1,5 @@
 #include "format_line.h"
-#include "log_output.h"
+//#include "log_output.h"
 /* format_line: takes arguments from main and formats a string to be passed to outline
  * out_args: see format_line.h for details
  */
