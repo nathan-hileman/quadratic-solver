@@ -34,7 +34,7 @@ int is_number(char * result) {
 
 // validator function that checks for possible errors and reports back to user with a result
 
-int check_validation(char * line, int n, double * a, double * b, double * c) {
+int check_validation(char * line, int n, float * a, float * b, float * c) {
 
 
     // checks if line is empty using [is_empty] function
@@ -95,11 +95,11 @@ int main(int argc, char ** argv) {
     
     // testing
     int n = 100;
-    double a = 0.0;
-    double b = 0.0;
-    double c = 0.0;
+    float a = 0.0;
+    float b = 0.0;
+    float c = 0.0;
     char * line = (char *) malloc(100);
-    strcat(line, "2016.12124 2017.0e6 250000.0e-5");
+    strcat(line, "2016.12124 2017.0e6 2500.0e-5");
 
     printf("\n\nTesting\nLine, as sent by cmd line:");
     printf("%s\n", line);
