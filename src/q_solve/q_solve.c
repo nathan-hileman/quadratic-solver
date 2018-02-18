@@ -6,18 +6,17 @@
 /* Function that implements the quadratic equation.
  * Takes floats a, b, and c from user input and uses them in the equation.
  */
-int q_solve(float a, float b, float c)
-{   
+int q_solve(float a, float b, float c) {   
     
     /* Declaration of Variables */
     float d, root_1, root_2;  // discrimanant, and the two possible root solutions
  
     /* Equation for the Discriminant */
-    d = b * b - 4 * a * c;
+    d = (b * b) - (4 * a * c);
 
     /* Discriminant Positive, Real Number Solution */
-    if (d > 0)
-    {
+    if (d > 0) {
+
         printf("Roots are real numbers.\n");
   
         /* Calculate Solution of Both Roots */
@@ -25,11 +24,9 @@ int q_solve(float a, float b, float c)
         root_2 = (-b - sqrt(d)) / (2 * a);
 
         printf("Roots of quadratic equation are: %.7f , %.7f", root_1, root_2);
-    }
+    
+    } else if (d == 0) { /* Discriminant Zero, One Real Double Root Solution */
 
-    /* Discriminant Zero, One Real Double Root Solution */
-    else if (d == 0)
-    {
         printf("Double root solution.\n");
  
         /* Calculate Single Double Root Solution */
@@ -38,11 +35,8 @@ int q_solve(float a, float b, float c)
         printf("Root of quadratic equation is +/-: %.7f ", root_1);
  
         return 0;
-    }
-
-    /* Discriminant Negative, Complex Number Solution (IGNORE) */
-    else
-    {
+    } else { /* Discriminant Negative, Complex Number Solution (IGNORE) */
+      
         printf("Complex roots. No real solution.\n");
     
         return 0; 
