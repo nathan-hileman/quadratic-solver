@@ -1,41 +1,48 @@
 #include <stdio.h>
 #include <math.h>
 #include "q_solve.h"
+#include "log_output.h"
 
-/* test bed for an initial quadratic equation solver. No multi-precision. Rounds to 7 decimal places. */
-int q_solve(double *a, double *b, double *c) {   
+/* Function that implements the quadratic equation.
+ * Takes floats a, b, and c from user input and uses them in the equation.
+ */
+int q_solve(float a, float b, float c)
+{   
     
-    /* discriminant and the two possible root solutions */
-    double d, root_1, root_2;  
+    /* Declaration of Variables */
+    float d, root_1, root_2;  // discrimanant, and the two possible root solutions
  
-    /* equation for calculating the discriminant */
-    d = *b * *b - 4 * *a * *c;
+    /* Equation for the Discriminant */
+    d = b * b - 4 * a * c;
 
-    /* discriminant positive, real number solution */
-    if (d > 0) {
+    /* Discriminant Positive, Real Number Solution */
+    if (d > 0)
+    {
         printf("Roots are real numbers.\n");
   
-        /* calculate solution of both roots */
-        root_1 = (-*b + sqrt(d)) / (2 * *a);
-        root_2 = (-*b - sqrt(d)) / (2 * *a);
+        /* Calculate Solution of Both Roots */
+        root_1 = (-b + sqrt(d)) / (2 * a);
+        root_2 = (-b - sqrt(d)) / (2 * a);
 
         printf("Roots of quadratic equation are: %.7f , %.7f", root_1, root_2);
     }
 
-    /* discriminant zero, one real double root */
-    else if (d == 0) {
+    /* Discriminant Zero, One Real Double Root Solution */
+    else if (d == 0)
+    {
         printf("Double root solution.\n");
  
-        /* calculate single double root solution */
-        root_1 = -*b / (2 * *a);
+        /* Calculate Single Double Root Solution */
+        root_1 = -b / (2 * a);
 
         printf("Root of quadratic equation is +/-: %.7f ", root_1);
  
         return 0;
     }
 
-    /* discriminant negative, complex number solution, not interested */
-    else {
+    /* Discriminant Negative, Complex Number Solution (IGNORE) */
+    else
+    {
         printf("Complex roots. No real solution.\n");
     
         return 0; 

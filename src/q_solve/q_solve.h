@@ -1,1 +1,2 @@
-int q_solve(double *a, double *b, double *c)
+/* Function that implements the quadratic equation */
+int q_solve(float a, float b, float c);
