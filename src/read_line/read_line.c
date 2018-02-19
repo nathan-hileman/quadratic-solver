@@ -18,7 +18,7 @@ char *read_line()
     
     printf("Enter values for a, b, and c: ");
     
-    fgets(input, sizeof(char) * 100, stdin)    // read the line of input
+    fgets(input, sizeof(char) * 100, stdin);    // read the line of input
 
     return input;
 }

@@ -4,5 +4,6 @@ Dir Description: N/A
 Overview:
  <p>I think we mention GNU, and i remember the professor said it as well. GNU (TEMP)?</p>
 
+<p>Ownership and NDA ( for nda have professor discuss these)</p>
  
  <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
