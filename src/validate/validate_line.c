@@ -24,7 +24,7 @@ int is_number(char * result) {
     // strtod checks input if its a number or a character.
     ret = strtod(result, &ptr);
 
-    if(strlen(ptr) != 0) {
+    if(ret == 0) {
         printf("Error: Not a number, character was inserted instead.\n");
         return -1; // or return -1 doesnt matter, i like exit more...
     }
@@ -91,22 +91,22 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
 
 
 // this main is just for testing, should be removed later on!
-/*int main(int argc, char ** argv) {
+// int main(int argc, char ** argv) {
     
-    // testing
-    int n = 100;
-    float a = 0.0;
-    float b = 0.0;
-    float c = 0.0;
-    char * line = (char *) malloc(100);
-    strcat(line, "2016.12124 2017.0e6 2500.0e-5");
+//     // testing
+//     int n = 100;
+//     float a = 0.0;
+//     float b = 0.0;
+//     float c = 0.0;
+//     char * line = (char *) malloc(100);
+//     strcat(line, "2016.12124 2017.0e6 2500.0e-5");
 
-    printf("\n\nTesting\nLine, as sent by cmd line:");
-    printf("%s\n", line);
-    printf("Result: ");
-    check_validation(line, n, &a, &b, &c);
+//     printf("\n\nTesting\nLine, as sent by cmd line:");
+//     printf("%s\n", line);
+//     printf("Result: ");
+//     check_validation(line, n, &a, &b, &c);
     
-    printf("\n\n");
+//     printf("\n\n");
 
-    return 0;
-}*/
+//     return 0;
+// }
