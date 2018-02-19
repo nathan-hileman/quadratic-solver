@@ -17,6 +17,7 @@ Compiler options:
 Programming Standard:
 	Looking at different C coding standards, the one that makes the most sense is the GNU c programming standard. (https://www.gnu.org/prep/standards/html_node/Writing-C.html)
 	Feel free to skim it. 
+	The standard can be found in this directory (GNU programming std) - just skip to "Making The Best Use of C"
 	
 Readme Structure:
 	Readmes are to be structured as follows:
