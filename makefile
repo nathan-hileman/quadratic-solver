@@ -2,11 +2,10 @@ CC = gcc
 CCFLAGS = -Wall -pedantic -std=c99
 
 program:
-	cd src; make quad_solver;
+	cd src; make build;
 
 deploy:
 	tar -cvf quad_solver.tar src/quad_solver;
 
 clean:
-	-rm -rf quad_solver
-	cd src; make clean
+	cd src; make clean;
