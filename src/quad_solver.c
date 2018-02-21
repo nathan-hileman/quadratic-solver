@@ -47,7 +47,7 @@ int main() {
     
         log_output("q_solve successful");                           // report success to log file
         
-        sprintf(buffer, "root1: %.7f, root2: %.7f");                // write solutions to an output buffer 
+        sprintf(buffer, "root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
         
         log_output(buffer);                                         // write output buffer to log file
 
