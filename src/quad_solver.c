@@ -28,13 +28,16 @@ int main() {
     /* Validate Input */
     log_output("check_validation:   ");
     
-    if ( check_validation(input, n, &a, &b, &c) != 0 ) {          // if input is invalid
+    int ret = check_validation(input, n, &a, &b, &c);
+    if ( ret == -1 ) {          // if input is invalid
 
-        log_output("Invalid input");                                // report invalid input to log file
+        log_output("Invalid Input!");                                // report invalid input to log file
+        
+        return -1;
 
     } else {                                                        // input valid
     
-        log_output("input valid");                                  // report valid input to log file
+        log_output("Input Valid!");                                  // report valid input to log file
     }
 
     /* Ingest Into Quadratic Equation and Solve */
@@ -42,15 +45,17 @@ int main() {
 
     if ( q_solve(a, b, c, &root_1, &root_2) != 0 ) {                // if q_solve received an error
     
-        log_output("q_solve failed");                              // report failure to log file
+        log_output("q_solve Failed!");   
+        return -1;                           // report failure to log file
     } else {                                                       // if q_solve returned successfuly
     
-        log_output("q_solve successful");                           // report success to log file
+        log_output("q_solve Successful!");                           // report success to log file
         
-        sprintf(buffer, "root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
+        sprintf(buffer, "The roots are root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
         
         log_output(buffer);                                         // write output buffer to log file
 
     }
+    return 0;
 }
 
