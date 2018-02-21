@@ -3,8 +3,7 @@
 /* format_line: takes arguments from main and formats a string to be passed to outline
  * out_args: see format_line.h for details
  */
-int format_line(struct out_args *args)
-{
+int format_line(struct out_args *args) {
 	int ret = 0;
 	
 	args->output_string = malloc(100); // allocate space for the output string
