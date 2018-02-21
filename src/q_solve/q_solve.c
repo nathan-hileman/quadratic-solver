@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include "q_solve.h"
+#include "../log_output/log_output.h"
 
 /* Function that implements the quadratic equation.
  * Takes floats a, b, and c from user input and uses them in the equation.
@@ -18,6 +19,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2)
     if (disc > 0) {
         
         printf("Roots are real numbers.\n");
+        log_output("Roots are real numbers.");
   
         /* Calculate Solution of Both Roots */
         *root_1 = (-b + sqrt(disc)) / (2 * a);
@@ -28,6 +30,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2)
     } else if (disc == 0) {  /* Discriminant Zero, One Real Double Root Solution */
         
         printf("Double root solution.\n");
+        log_output("Double root solution.");
  
         /* Calculate Single Double Root Solution */
         *root_1 = -b / (2 * a);
@@ -40,7 +43,8 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2)
     } else {    /* Discriminant Negative, Complex Number Solution (IGNORE) */
         
         printf("Complex roots. No real solution.\n");
-    
+        log_output("Complex root. No real solution.");
+
         return 0; 
     }
  

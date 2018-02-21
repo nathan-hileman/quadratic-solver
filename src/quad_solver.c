@@ -17,6 +17,7 @@ int main() {
     float root_1 = 0.0, root_2 = 0.0;                           // root solution(s) to quadratic equation
     char * buffer = malloc(sizeof(char) * 100);                  // output buffer
 
+    log_output("============================================================");
     log_output("\nCommand Line Quadratic Solver\n");
 
     /* Read Line of Input */
@@ -41,7 +42,7 @@ int main() {
     }
 
     /* Ingest Into Quadratic Equation and Solve */
-    log_output("q_solve:    ");
+    log_output("\nq_solve:    ");
 
     if ( q_solve(a, b, c, &root_1, &root_2) != 0 ) {                // if q_solve received an error
     
