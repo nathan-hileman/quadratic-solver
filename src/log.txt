@@ -1,501 +1,457 @@
+
 Command Line Quadratic Solver
 
 read_line:   
-3 v g
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-3 0 0
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-2 v a
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1 v 3
+i j 3
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
-The roots are root 1: 0.0000000, root 2: 0.0000000
+The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-1 v e
+i j 3
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
-The roots are root 1: -0.0000000, root 2: 0.0000000
+The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-1 v e
+i j 3
 
 check_validation:   
-Invalid Input!
+Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-
+i j 8
 
 check_validation:   
 Invalid Input!
-q_solve:    
-q_solve Successful!
-The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-1 v e
+9 9 9
 
 check_validation:   
 Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+9 9 9
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+i j 9
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+ 9 8 7
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+   9 9 9
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+i j i
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+i j 9
+
+check_validation:   
+Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-
+2 i 3
 
 check_validation:   
+Invalid Input!
+
 Command Line Quadratic Solver
 
 read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
+2 3 6
 
 check_validation:   
+Invalid Input!
+
 Command Line Quadratic Solver
 
 read_line:   
 1 2 3
 
 check_validation:   
+Invalid Input!
+
 Command Line Quadratic Solver
 
 read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-7 67 8
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1 dv e
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
- 
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1 v d
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1 2
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-2 2
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-2 3
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-7 7
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1 2
+1 2 5
 
 check_validation:   
 Invalid Input!
-q_solve:    
-q_solve Successful!
-The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-1 2
+1 2 3
 
 check_validation:   
 Invalid Input!
-q_solve:    
-q_solve Successful!
-The roots are root 1: nan, root 2: nan
+
 Command Line Quadratic Solver
 
 read_line:   
-1 2
-
-check_validation:   
-Invalid Input!
-q_solve:    
-q_solve Successful!
-The roots are root 1: nan, root 2: nan
-Command Line Quadratic Solver
-
-read_line:   
-1 2
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-3 v e
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-2 3 4
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 8
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 8 8
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-2 3
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-2 3 4
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-1 
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-2
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-9 
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-1
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-3
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-3
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-3 3 3
-
-check_validation:   
-Command Line Quadratic Solver
-
-read_line:   
-2 2 3
+1 2 3
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+i j 3
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: nan, root 2: nan
+
+Command Line Quadratic Solver
+
+read_line:   
+2 3 4
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+4 5 5 
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+8 7 8
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+[A
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+i j 1
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+4 3 2
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+3 4 3
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+3 4 3
+
+check_validation:   
+Invalid Input!
+
 Command Line Quadratic Solver
 
 read_line:   
 3 4 5
 
 check_validation:   
-Input Valid!
-q_solve:    
-q_solve Successful!
-The roots are root 1: 0.0000000, root 2: 0.0000000
+Invalid Input!
+
 Command Line Quadratic Solver
 
 read_line:   
-8 n j
+3 4 5
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+3 4 5
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+3 4 3
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+2 3 4
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+1 2 3
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
-The roots are root 1: -0.0000000, root 2: 0.0000000
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
 Command Line Quadratic Solver
 
 read_line:   
-9 8 u
+9 8 7
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+5 6 1
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: -0.2000000, root 2: -1.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+i j 8
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+i j j
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+9 i
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+9 8 7
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+9 8 0
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: 0.0000000, root 2: -0.8888889
+
 Command Line Quadratic Solver
 
 read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 a s
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9 9
+8 7 9.8
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: 0.0000000, root 2: 0.0000000
+
 Command Line Quadratic Solver
 
 read_line:   
- 9 9 9
+6 7 1
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: -0.1666667, root 2: -1.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+2 3 3 
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
 The roots are root 1: 0.0000000, root 2: 0.0000000
+
 Command Line Quadratic Solver
 
 read_line:   
-9 d d
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 9
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-9 j
-
-check_validation:   
-Invalid Input!
-Command Line Quadratic Solver
-
-read_line:   
-0 9 8
+2 3 1
 
 check_validation:   
 Input Valid!
 q_solve:    
 q_solve Successful!
-The roots are root 1: nan, root 2: -inf
+The roots are root 1: -0.5000000, root 2: -1.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+10 5 3
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+ 2 3 12     
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000
+
+Command Line Quadratic Solver
+
+read_line:   
+hd has 128123 7as7dshf . dsjfhasdf
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+ksdjfl;kajf;slakdfjasdf
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+jdfjdf djfdjf djfjd
+
+check_validation:   
+Invalid Input!
+
+Command Line Quadratic Solver
+
+read_line:   
+1 2 3 4 3 1 2 . 22
+
+check_validation:   
+Input Valid!
+q_solve:    
+q_solve Successful!
+The roots are root 1: 0.0000000, root 2: 0.0000000

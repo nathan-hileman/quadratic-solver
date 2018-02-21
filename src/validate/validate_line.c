@@ -23,7 +23,7 @@ int is_number(char * result) {
 
     // strtod checks input if its a number or a character.
     ret = strtod(result, &ptr);
-    if(strlen(ptr) > 1) {
+    if(strlen(ptr) > 0) {
         return -1;
     }
 
@@ -45,14 +45,14 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
 
     char * numbers = strtok(line, " ");
     char * results[3];
-
     int i = 0;
 
     // loops through line, tokenizes, and assigns values to char * results
     while (numbers != NULL) { 
-        if(i < 3) {
+        if (i < 3) {
             results[i++] = numbers;
         }
+        
         numbers = strtok(NULL, " ");
     }
     
@@ -62,9 +62,14 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
         return -1;
     }
     
+    results[2] = strtok(results[2], "\n");
+        
     // checks if numbers are all valid
-
-   if (is_number(results[0]) == 0 && is_number(results[1]) == 0 && is_number(results[2]) == 0) {
+    int ret1 = is_number(results[0]);
+    int ret2 = is_number(results[1]);
+    int ret3 = is_number(results[2]);
+    
+    if (is_number(results[0]) == 0 && is_number(results[1]) == 0 && is_number(results[2]) == 0) {
         
         *a = atof(results[0]);
         *b = atof(results[1]);

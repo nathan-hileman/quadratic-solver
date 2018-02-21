@@ -17,7 +17,7 @@ int main() {
     float root_1 = 0.0, root_2 = 0.0;                           // root solution(s) to quadratic equation
     char * buffer = malloc(sizeof(char) * 100);                  // output buffer
 
-    log_output("Command Line Quadratic Solver\n");
+    log_output("\nCommand Line Quadratic Solver\n");
 
     /* Read Line of Input */
     char * input = read_line();                                  // reads a,b,c from user input
@@ -27,7 +27,7 @@ int main() {
 
     /* Validate Input */
     log_output("check_validation:   ");
-    
+
     int ret = check_validation(input, n, &a, &b, &c);
     if ( ret == -1 ) {          // if input is invalid
 
