@@ -92,13 +92,15 @@ int main(int argc, char ** argv) {
     
     // testing
     char * line = (char *) malloc(100);
-    
+    float a = 0.0;
+    float b = 0.0;
+    float c = 0.0;
     strcat(line, "2016.12124 2017.0e6 250000.0e-5");
 
     printf("\n\nTesting\nLine, as sent by cmd line:");
     printf("%s\n", line);
     printf("Result: ");
-    check_validation(line);
+    check_validation(line, 100, &a, &b, &c);
     
     printf("\n\n");
 
