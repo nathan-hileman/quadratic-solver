@@ -18,25 +18,25 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2)
     /* Discriminant Positive, Real Number Solution */
     if (disc > 0) {
         
-        printf("Roots are real numbers.\n");
-        log_output("Roots are real numbers.");
+        printf("Two real root solutions.\n");
+        log_output("Two real root solutions.");
   
         /* Calculate Solution of Both Roots */
         *root_1 = (-b + sqrt(disc)) / (2 * a);
         *root_2 = (-b - sqrt(disc)) / (2 * a);
 
-        printf("Roots of quadratic equation are: %.7f , %.7f\n",  root_1[0], root_2[0]);
+        printf("Roots of quadratic equation are %.7f and %.7f\n",  root_1[0], root_2[0]);
 
     } else if (disc == 0) {  /* Discriminant Zero, One Real Double Root Solution */
         
-        printf("Double root solution.\n");
-        log_output("Double root solution.");
+        printf("Real double root solution.\n");
+        log_output("Real double root solution.");
  
         /* Calculate Single Double Root Solution */
         *root_1 = -b / (2 * a);
         *root_2 = b / (2 * a);
 
-        printf("Root of quadratic equation is +/-: %.7f\n", root_1[0]);
+        printf("Root of quadratic equation is ±%.7f\n", root_1[0]);
  
         return 0;
         
