@@ -62,5 +62,6 @@ int main() {
         log_output(buffer);     // write output buffer to log file
 
     }
+    free(buffer);
     return 0;
 }
