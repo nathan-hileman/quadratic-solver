@@ -1,1 +1,2 @@
 #System Testing
+For system testing, the only system requirements we will be testing is whether the quadratic solver program can be executed and run properly using any Linux bash command line interpreter preferably Ubuntu. The size and performance of the program aren't necessary to test for this project; however, we know that the program is relatively small and will require very little memory.  
