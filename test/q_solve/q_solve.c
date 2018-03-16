@@ -16,7 +16,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2)
  
     /* Equation for the Discriminant */
     disc = (b * b) - (4 * a * c);
-
+    
     /* Discriminant Positive, Real Number Solution */
     if (disc > 0) {
         
@@ -64,27 +64,109 @@ int main(int argc, char ** argv)
     /* TEST 1 - 2 real roots */
 
         /* Initialize required variables */
+        
         a = 10.0;
         b = 5.0;
         c = -8.0;
         root_1 = 0.0;
         root_2 = 0.0;
-
+        
         cunit_print("\nTEST 1: \n\tCoefficients: a = 10.0, b = 5.0, c = -8.0");
         
         /* Run q_solve */
         cunit_print("\n\tResults: ");
 
         ret = q_solve(a, b, c, &root_1, &root_2);
-
+        
         /* Assert if unit test passed */
         assert_eq("\n\tCUNIT ERROR: Reason...", ret, 0);
 
         /* Clear memory */
         memset(buffer, 0, sizeof(char));
 
+    // TEST 1 with relative error
 
-    /* TEST 2 - 1 real double root */
+    double x1 = 3.1;
+    double x2 = 3.3;
+    a = 1.0;
+    b = -x1 + - x2;
+    c = x1 * x2;
+    root_1 = 0.0;
+    root_2 = 0.0;
+    
+    cunit_print("\nTEST 1 with Relative Error: \nCoefficients: a = 1.0, b = -3.1 + -3.3, c = 3.1 * 3.3");
+
+    // Running q_solve function
+    cunit_print("\n\tResults: ");
+
+    ret = q_solve(a, b, c, &root_1, &root_2);
+
+    // check if test passed
+    assert_eq("\n\tCUnit ERROR: Failed q_solve(): ", ret, 0);
+
+    // check for relative error
+    assert_feqrerr("X1", x1, x2, 10.0 * cunit_dmacheps);
+    assert_feqrerr("X2", x2, x1, 10.0 * cunit_dmacheps);
+
+    // clear memory
+    memset(buffer, 0,sizeof(char));
+
+   // TEST 2 with relative error
+
+    x1 = 3.9;
+    x2 = 3.5;
+    a = 1.0;
+    b = -x1 + - x2;
+    c = x1 * x2;
+    root_1 = 0.0;
+    root_2 = 0.0;
+    
+    cunit_print("\nTEST 2 with Relative Error: \nCoefficients: a = 1.0, b = -3.9 + -3.5, c = 3.9 * 3.5");
+
+    // Running q_solve function
+    cunit_print("\n\tResults: ");
+
+    ret = q_solve(a, b, c, &root_1, &root_2);
+
+    // check if test passed
+    assert_eq("\n\tCUnit ERROR: Failed q_solve(): ", ret, 0);
+
+    // check for relative error
+    assert_feqrerr("X1", x1, x2, 10.0 * cunit_dmacheps);
+    assert_feqrerr("X2", x2, x1, 10.0 * cunit_dmacheps);
+
+    // clear memory
+    memset(buffer, 0,sizeof(char));
+
+    // TEST 3 with relative error
+
+    x1 = -6.0;
+    x2 = -6.0;
+    a = 9.0;
+    b = -x1 + - x2;
+    c = -(x1/3) * -(x2/3);
+    root_1 = 0.0;
+    root_2 = 0.0;
+    
+    cunit_print("\nTEST 3 with Relative Error: \nCoefficients: a = 1.0, b = -3.9 + -3.5, c = 3.9 * 3.5");
+
+    // Running q_solve function
+    cunit_print("\n\tResults: ");
+
+    ret = q_solve(a, b, c, &root_1, &root_2);
+
+    // check if test passed
+    assert_eq("\n\tCUnit ERROR: Failed q_solve(): ", ret, 0);
+
+    // check for relative error
+    assert_feqrerr("X1", x1, x2, 10.0 * cunit_dmacheps);
+    assert_feqrerr("X2", x2, x1, 10.0 * cunit_dmacheps);
+
+    // clear memory
+    memset(buffer, 0,sizeof(char));
+
+
+    /* TEST 2 - 1 real double root */   
 
         /* Initialize required variables */
         a = 9.0;
@@ -171,6 +253,8 @@ int main(int argc, char ** argv)
 
         /* Clear memory */
         memset(buffer, 0, sizeof(char));
+
+
 
     free(buffer);
 }
