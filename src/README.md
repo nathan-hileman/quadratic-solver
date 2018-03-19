@@ -4,6 +4,8 @@
 
 <p>Description: Source code and header files necessary for the quadratic solver</p>
 
+Main: quad_solver
+
 Source Directories:
 <ul>
     <li>read_line:      reads a line of user input</li>
