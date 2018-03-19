@@ -7,12 +7,32 @@
 #include <string.h> // for strtok() and more
 #include <math.h> // for isnan()
 #include "validate_line.h"
+#include "ctype.h"
 // function that checks if an input is empty
 
 int is_empty(char * line) { 
     return line[0] == '\n';
 }
 
+char *trimwhitespace(char *str)
+{
+  char *end;
+
+  // Trim leading space
+  while(isspace((unsigned char)*str)) str++;
+
+  if(*str == 0)  // All spaces?
+    return str;
+
+  // Trim trailing space
+  end = str + strlen(str) - 1;
+  while(end > str && isspace((unsigned char)*end)) end--;
+
+  // Write new null terminator
+  *(end+1) = 0;
+
+  return str;
+}
 // checks whether the arguments contain numbers or characters 
 
 int is_number(char * result) {
@@ -24,6 +44,7 @@ int is_number(char * result) {
     // strtod checks input if its a number or a character.
     ret = strtod(result, &ptr);
     if(strlen(ptr) > 0) {
+        printf("her");
         return -1;
     }
 
@@ -33,8 +54,10 @@ int is_number(char * result) {
 // validator function that checks for possible errors and reports back to user with a result
 
 int check_validation(char * line, int n, float * a, float * b, float * c) {
+    
     // checks if line is empty using [is_empty] function
     int ret  = is_empty(line);
+    char * new_line = trimwhitespace(line);
     if ( ret ){
         printf("Error: Line is empty.\n");
         return -1; // or return -1 doesnt matter, i like exit more...
@@ -43,7 +66,7 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
 
     // splits the string with values
 
-    char * numbers = strtok(line, " ");
+    char * numbers = strtok(new_line, " ");
     char * results[3];
     int i = 0;
 
@@ -65,6 +88,7 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     results[2] = strtok(results[2], "\n");
         
     // checks if numbers are all valid
+   
     int ret1 = is_number(results[0]);
     int ret2 = is_number(results[1]);
     int ret3 = is_number(results[2]);

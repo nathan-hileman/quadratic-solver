@@ -4,9 +4,6 @@ CCFLAGS = -Wall -pedantic -std=c99
 program:
 	cd src; make build;
 
-run: 
-	cd src; ./quad_solver;
-
 deploy:
 	tar -cvf quad_solver.tar src/quad_solver;
 
