@@ -1,4 +1,3 @@
-Overview:
 Read Line
 ===========
 read_line.c
