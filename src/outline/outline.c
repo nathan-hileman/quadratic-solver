@@ -6,3 +6,5 @@ int outline(char * output){
 		perror("Failed to output the result of the test: ");
 	return ret;
 }
+
+
