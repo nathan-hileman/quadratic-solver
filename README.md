@@ -2,65 +2,35 @@
 
 A command-line program written in C for solving quadratic equations that follows IEEE Floating Point standards
 
-Folder structure as of now:
-    <ul>
-        <li>quadratic-solver</li>
-        <ul>
-            <li>makefile</li>
-            <li>README.md</li>
-            <li>doc</li>
-                <ul>
-                    <li>TPS Reports</li>
-                        <ul>
-                            <li>README.md</li>
-                        </ul>
-                    <li>Stories</li>
-                        <ul>
-                            <li>README.md</li>
-                        </ul>
-                    <li>Coding Standards (C programming standards, flags, etc.)</li>
-                        <ul>
-                            <li>makefile</li>
-                            <li>test.c</li>
-                            <li>README.md</li>
-                        </ul>
-                    <li>Version Control (Git)</li>
-                        <ul>
-                            <li>README.md</li>
-                        </ul>
-                    <li>Automation</li>
-                        <ul>
-                            <li>README.md</li>
-                        </ul>
-                    <li>IEEE FP Ranges & Precisions</li>
-                        <ul>
-                            <li>README.MD</li>
-                        </ul>
-                    <li>Relative & Absolute Error</li>
-                        <ul>
-                            <li>README.MD</li>
-                        </ul>
-                    <li>Licensing</li>
-                        <ul>
-                            <li>README.md</li>
-                        </ul>
-                </ul>
-            <li>src</li>
-                <ul>
-                    <li>quad_solver</li>
-                    <li>read_line</li>
-                    <li>validate</li>
-                    <li>format_line</li>
-                    <li>outline</li>
-                    <li>log_output</liv>
-                    <li>makefile</li>
-                    <li>README.md</li>
-                </ul>
-            <li>spikes</li>
-                <ul>
-                    <li>README.md</li>
-                </ul>
-        </ul>   
-    </ul>
+Team Members: Ali Itani, Nathan Hileman, Xavier Gray 
 
- <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
+Makefile Instructions
+============
+<ul>
+<li><b>make program:</b>
+    compiles the program. Stores object files in /build and executable in /src as 'quad_solver'</li>
+
+<li><b>make run:</b>
+    runs the 'quad_solver' executable</li>
+    
+<li><b>make deploy:</b>
+    compresses the executable into a tar ball</li>
+    
+<li><b>make test_qsolve:</b>
+    unit test for q_solve function</li>
+    
+<li><b>make test_readline:</b>
+    unit test for read_line function</li>
+    
+<li><b>make test_validate:</b>
+    unit test for validate_line function</li>
+    
+<li><b>make test_formatline:</b>
+    unit test for format_line function</li>
+    
+<li><b>make test_outline:</b>
+    unit test for outline function</li>
+    
+<li><b>make clean:</b>
+    cleans all executables, object files, tar balls, logs, etc.</li>
+</ul>
