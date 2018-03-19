@@ -6,34 +6,29 @@
 int format_line(struct out_args *args) {
 	int ret = 0;
 	
-	args->output_string = malloc(100); // allocate space for the output string
+	args->output_string = malloc(500); // allocate space for the output string
 	
-	/* if there exists no real solution, prepare a string stating that for the user */
+	/* if the solution is complex, prepare a string stating that for the user */
 	
-	if (!args->real_solution) {
+	if (args->solution == 0) {
 		
 		// if sprintf fails, change the return value to 1
 		
 		ret = ((sprintf(args->output_string, "There is no real solution for a = %f, b = %f, and c = %f", 
 			args->a, args->b, args->c)) < 0 ? 1 : 0);
 	
-	} else {
-
-		/* in case of a double solution */
-		if (args->double_solution) {
-			
-			// if sprintf fails, change the return value to 1
-			ret = ((sprintf(args->output_string, "a = %f, b = %f, and c = %f produces a double solution\n\tx= +-%f",
-				args->a, args->b, args->c, args->x)) < 0 ? 1 : 0);
-		
-		} else { /* in case of a single solution */
-
-			// if sprintf fails, change the return value to 1
-
-			ret = ((sprintf(args->output_string, "a = %f, b = %f, and c = %f produces a single solution\n\tx= %f",
-				args->a, args->b, args->c, args->x)) < 0 ? 1 : 0);
-
-		}
+	} 
+	else if (args->solution == 1) {
+	/* Single Double Root Solution */
+		// if sprintf fails, change the return value to 1
+		ret = ((sprintf(args->output_string, "a = %f, b = %f, and c = %f produces a double solution\n\troot 1 = %.7f, root 2 = %.7f",
+				args->a, args->b, args->c, args->root_1, args->root_2)) < 0 ? 1 : 0);
+	}	
+	else if (args->solution == 2) {
+	 /* Single Double Root Solution */
+		// if sprintf fails, change the return value to 1
+		ret = ((sprintf(args->output_string, "a = %.7f, b = %.7f, and c = %.7f produces a Single Double Root Solution\n\t root = +-%.7f",
+			args->a, args->b, args->c, args->root_1)) < 0 ? 1 : 0);
 	}
 	
 	return ret;
