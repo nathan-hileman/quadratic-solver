@@ -1,8 +1,5 @@
-Author(s): 
-Dir Description: outputs line to user
+Outline
+=======
+outline.c
 
-Overview:
-
-
-
-Team: Ali, Nathan, Xavier.
+Outputs line to user
