@@ -47,10 +47,12 @@ Folder structure as of now:
                 </ul>
             <li>src</li>
                 <ul>
-                    <li>main</li>
-                    <li>rline</li>
+                    <li>quad_solver</li>
+                    <li>read_line</li>
                     <li>validate</li>
-                    <li>fouput</li>
+                    <li>format_line</li>
+                    <li>outline</li>
+                    <li>log_output</liv>
                     <li>makefile</li>
                     <li>README.md</li>
                 </ul>
