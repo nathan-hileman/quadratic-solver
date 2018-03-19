@@ -11,8 +11,10 @@ debug: outline
 
 outline:
 	$(CC) $(CCFLAGS) outline.c -o outline
+
 test_format_line:
 	$(CC) $(CCFLAGS) test_outline.c -o test_outline
+	
 clean:
 	rm outline; rm outline.o
 
