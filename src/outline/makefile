@@ -14,5 +14,5 @@ outline:
 test_format_line:
 	$(CC) $(CCFLAGS) test_outline.c -o test_outline
 clean:
-	rm outline
+	rm outline; rm outline.o
 

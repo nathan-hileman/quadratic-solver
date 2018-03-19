@@ -20,6 +20,8 @@ clean:
 	cd read_line; rm -rf read_line.o;
 	cd validate; rm -rf validate_line.o;
 	cd q_solve; rm -rf q_solve.o;
+	cd format_line; rm -rf format_line.o;
+	cd outline; rm -rf outline.o;
 	cd ../build; rm -rf log_output.o;
 	cd ../build; rm -rf read_line.o;
 	cd ../build; rm -rf validate_line.o;
