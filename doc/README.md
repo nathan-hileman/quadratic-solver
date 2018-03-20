@@ -1,6 +1,17 @@
-we should discuss each dir inside of doc
-fill this later on
+Documentation
+=============
 
-also we might need to add testing, maintenance, security, ownership
+Contains all documentation for the quadratic solver program.
 
- <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
+This includes:
+<ul>
+ <li>Coding Standards</li>
+ <li>IEEE floating point ranges and precision</li>
+ <li>Licensing</li>
+ <li>Maintenance</li>
+ <li>Relative and Absolute Error</li>
+ <li>Security</li>
+ <li>Stories</li>
+ <li>TPS Reports</li>
+ <li>Testing</li>
+ <li>Version Control Standards</li>

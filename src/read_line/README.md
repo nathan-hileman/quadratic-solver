@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Author(s): 
 ===========
 
@@ -7,6 +8,8 @@ A finished version of the read line function
 
 Overview:
 ===========
+=======
+>>>>>>> c941c30380a797b8c2e5f994478a7f007e993393
 Read Line
 ===========
 read_line.c

@@ -1,0 +1,1 @@
+int outline(char * output);

@@ -1,8 +1,7 @@
+Format Line
+===========
+format_line.c
+
+Formats output of the solution to be printed with outline
+
 Author(s): Xavier Gray
-Dir Description: formats output to be printed with outline
-
-Overview:
-
-
-
-Team: Ali, Nathan, Xavier.
