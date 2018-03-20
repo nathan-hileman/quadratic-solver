@@ -2,19 +2,24 @@
 #include "log_output.h"
 
 /**
-* Writes a message to a log text file
+* Logs a message to a file - log.txt
 */
 
 int log_output(char * message) {
 
 	FILE * fp;
 	
-    // fopens log.txt to append a message
-	fp = fopen("log.txt", "a");
+    // fopens file to append a message
 
-	// appends message to log.txt file
+	fp = fopen("log.txt", "a"); 
+
+	// using fprintf to log a formated output to stream
+
 	fprintf(fp, "%s\n", message);
 
+	// close file
+
 	fclose(fp);
+	
 	return 0;
 }

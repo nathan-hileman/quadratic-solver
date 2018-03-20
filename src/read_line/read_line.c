@@ -12,13 +12,17 @@
 * Prompts the user for input and reads the line that was inputted.  
 * Returns a string of user input.
 */
-char *read_line()
-{
-    char *input = malloc(sizeof(char) * 100);   // allocate memory for the input buffer
+char *read_line() {
+    
+    // allocate memory for the input buffer
+    
+    char *input = malloc(sizeof(char) * 100);   
     
     printf("Enter values for a, b, and c: ");
     
-    fgets(input, sizeof(char) * 100, stdin);    // read the line of input
+    // read the line of input from user from stdin
+    
+    fgets(input, sizeof(char) * 100, stdin);    
 
     return input;
 }

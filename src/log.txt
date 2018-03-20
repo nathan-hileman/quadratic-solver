@@ -3,16 +3,14 @@
 Command Line Quadratic Solver
 
 read_line:   
-1 2
+3 6 4
 
 check_validation:   
-Invalid Input!
-============================================================
+Numbers are valid they are: 3.0000000 6.0000000 4.0000000
 
-Command Line Quadratic Solver
+Input Valid!
 
-read_line:   
-1 2 
+q_solve:    
+Complex root. No real solution.
+q_solve Successful!
 
-check_validation:   
-Invalid Input!

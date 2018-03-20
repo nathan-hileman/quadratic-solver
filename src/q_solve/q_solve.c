@@ -32,8 +32,8 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
         
         // printf("Real double root solution.\n");
         log_output("Real double root solution.");
-	/* Set solution for format_line */
- 	*solution = 2;
+	    /* Set solution for format_line */
+ 	    *solution = 2;
         /* Calculate Single Double Root Solution */
         *root_1 = -b / (2 * a);
         *root_2 = b / (2 * a);

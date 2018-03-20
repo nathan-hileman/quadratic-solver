@@ -7,6 +7,7 @@
 #include "./q_solve/q_solve.h"
 #include "./format_line/format_line.h"
 #include "./outline/outline.h"
+#include "string.h"
 
 /**
 * Controller for the quadratic equation solver
@@ -27,61 +28,74 @@ int main() {
     /* Read Line of Input */
     char * input = read_line();         // reads a,b,c from user input
     
-    log_output("read_line:   ");     
-    log_output(input);                  // write input to log file
+    int retur = strncmp(input, "q", 1);
+   
+    while(retur != 0) {
+        log_output("read_line:   ");     
+        log_output(input);                  // write input to log file
 
 
-    /* Validate Input */
-    log_output("check_validation:   ");
+        /* Validate Input */
+        log_output("check_validation:   ");
 
-    int ret = check_validation(input, n, &a, &b, &c);   // validation flag
+        int ret = check_validation(input, n, &a, &b, &c);   // validation flag
 
-    if ( ret == -1 ) {
+        if ( ret == -1 ) {
 
-        log_output("Invalid Input!");
+            log_output("Invalid Input!");
+            
+            return -1;
+
+        } else {
         
-        return -1;
-
-    } else {
-    
-        log_output("Input Valid!");
-    }
-
-
-    /* Ingest Into Quadratic Equation and Solve */
-    log_output("\nq_solve:    ");
-
-    if ( q_solve(a, b, c, &root_1, &root_2, &solution) != 0 ) {    // check if q_solve returned an error
-    
-        log_output("q_solve Failed!");   
-        return -1;
-
-    } else {
-    
-        log_output("q_solve Successful!");
-        
-	struct out_args final_args;
-	final_args.a = a;
-	final_args.b = b;
-	final_args.c = c;
-	final_args.root_1 = root_1;
-	final_args.root_2 = root_2;
-	final_args.solution = solution;
-	if (format_line(&final_args) != 0) {
-		log_output("Format line failed!");
-		return -1;
-	}
-	if (outline(final_args.output_string) != 0){
-		log_output("outline failed!");
-		log_output(final_args.output_string);
-                return -1;
+            log_output("Input Valid!");
         }
 
-       // sprintf(buffer, "The roots are root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
-        
-        log_output(buffer);     // write output buffer to log file
 
+        /* Ingest Into Quadratic Equation and Solve */
+        log_output("\nq_solve:    ");
+
+        if ( q_solve(a, b, c, &root_1, &root_2, &solution) != 0 ) {    // check if q_solve returned an error
+        
+            log_output("q_solve Failed!");   
+            return -1;
+
+        } else {
+        
+            log_output("q_solve Successful!");
+            
+            struct out_args final_args;
+            final_args.a = a;
+            final_args.b = b;
+            final_args.c = c;
+            final_args.root_1 = root_1;
+            final_args.root_2 = root_2;
+            final_args.solution = solution;
+            
+            // guessing these are not done yet
+
+            // if (format_line(&final_args) != 0) {
+            //     log_output("Format line failed!");
+            //     return -1;
+            // }
+            
+            // if (outline(final_args.output_string) != 0){
+            //     log_output("outline failed!");
+            //     log_output(final_args.output_string);
+            //             return -1;
+            // }
+
+            // sprintf(buffer, "The roots are root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
+            
+            log_output(buffer);     // write output buffer to log file
+            
+        }
+        // prompt the user for another set of numbers
+        input = read_line();         // reads a,b,c from user input
+        retur = strncmp(input, "q", 1);
     }
     free(buffer);
+
+
     return 0;
 }

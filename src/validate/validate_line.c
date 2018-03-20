@@ -7,15 +7,16 @@
 #include <string.h> // for strtok() and more
 #include <math.h> // for isnan()
 #include "validate_line.h"
+#include "../log_output/log_output.h"
 #include "ctype.h"
-// function that checks if an input is empty
 
+// function that checks if an input is empty
 int is_empty(char * line) { 
     return line[0] == '\n';
 }
 
-char *trimwhitespace(char *str)
-{
+// trims trailing white space
+char *trimwhitespace(char *str) {
   char *end;
 
   // Trim leading space
@@ -33,8 +34,8 @@ char *trimwhitespace(char *str)
 
   return str;
 }
-// checks whether the arguments contain numbers or characters 
 
+// checks whether the arguments contain numbers or characters 
 int is_number(char * result) {
     
     char * ptr;
@@ -44,7 +45,6 @@ int is_number(char * result) {
     // strtod checks input if its a number or a character.
     ret = strtod(result, &ptr);
     if(strlen(ptr) > 0) {
-        printf("her");
         return -1;
     }
 
@@ -52,20 +52,18 @@ int is_number(char * result) {
 }
 
 // validator function that checks for possible errors and reports back to user with a result
-
 int check_validation(char * line, int n, float * a, float * b, float * c) {
     
     // checks if line is empty using [is_empty] function
     int ret  = is_empty(line);
     char * new_line = trimwhitespace(line);
     if ( ret ){
-        printf("Error: Line is empty.\n");
+        log_output("Error: Line is empty.\n");
         return -1; // or return -1 doesnt matter, i like exit more...
    }
 
 
     // splits the string with values
-
     char * numbers = strtok(new_line, " ");
     char * results[3];
     int i = 0;
@@ -81,14 +79,13 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     
     // checks if there are no missing arguments 
     if (i < 3) {
-        printf("Error: Missing arguments of a, b, c.\n");
+        log_output("Error: Missing arguments of a, b, c.\n");
         return -1;
     }
     
     results[2] = strtok(results[2], "\n");
         
     // checks if numbers are all valid
-   
     int ret1 = is_number(results[0]);
     int ret2 = is_number(results[1]);
     int ret3 = is_number(results[2]);
@@ -99,10 +96,15 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
         *b = atof(results[1]);
         *c = atof(results[2]);
         
-        printf("Numbers are valid they are: %.7lf %.7lf %.7lf\n", a[0], b[0], c[0]);
+        // once numbers are checked and valid log to log_output()
+        char * message[50];
+        sprintf(message,"Numbers are valid they are: %.7lf %.7lf %.7lf\n", a[0], b[0], c[0]);
+        
+        log_output(message);
 
     } else {
-        printf("Error: Not a number, character was inserted instead.\n");        
+        
+        log_output("Error: Not a number, character was inserted instead.\n");        
         return -1;
     }
 
