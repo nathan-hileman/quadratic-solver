@@ -1,18 +1,12 @@
-# Source
-
 Description
 =============
 Source code and header files necessary for the quadratic solver
 
+Authors: Ali Itani, Nathan Hileman, and Xavier Gray
 
-Authors
-========
-Ali Itani, Nathan Hileman, and Xavier Gray
-
-
+Source Directories
+==================
 Main: quad_solver
-
-Source Directories:
 <ul>
     <li>read_line:      reads a line of user input</li>
     <li>validate:       determines if the input from the user is valid</li>
