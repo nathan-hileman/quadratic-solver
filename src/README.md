@@ -8,7 +8,7 @@ Structure
 ==================
 <ul>
     <li>quad_solver.c:   main controller for the program</li>
-    <li>r/ead_line:      reads a line of user input</li>
+    <li>/read_line:      reads a line of user input</li>
     <li>/validate:       determines if the input from the user is valid</li>
     <li>/q_solve:        passes the user's input into the quadratic equation and returns a solution</li>
     <li>/format_line:    displays the solution</li>
