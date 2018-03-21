@@ -1,12 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "quad_solver.h"
-#include "./read_line/read_line.h"
-#include "./log_output/log_output.h"
-#include "./validate/validate_line.h"
-#include "./q_solve/q_solve.h"
-#include "./format_line/format_line.h"
-#include "./outline/outline.h"
+#include "./includes/quad_solver.h"
 #include "string.h"
 
 

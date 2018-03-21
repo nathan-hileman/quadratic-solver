@@ -1,3 +1,9 @@
+#include "read_line.h"
+#include "log_output.h"
+#include "validate_line.h"
+#include "q_solve.h"
+#include "format_line.h"
+#include "outline.h"
 /* header file for quad_solver.c */
 
 int n;                              /* Buffer Size. */
