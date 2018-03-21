@@ -1,8 +1,8 @@
-Dir Description:
+Description:
 ======================
 A finished version of the read line function.
 
-Inside the Dir includes:
+This directory includes:
 - makefile
 - README.md
 - read_line.c

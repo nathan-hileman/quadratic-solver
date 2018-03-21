@@ -3,8 +3,6 @@
 #include "./includes/quad_solver.h"
 #include "string.h"
 
-
-
 /**
 * Controller for the Command Line Quadratic Solver.
 */
@@ -12,12 +10,13 @@ int main() {
     
     // Declared and initialized variables.
     n = 100;                                  
-    a = 0.0, b = 0.0, c = 0.0;                
-    root_1 = 0.0, root_2 = 0.0;               
-    solution = 0;			                  
-    buffer = malloc(sizeof(char) * 100);     
+    a = 0.0, b = 0.0, c = 0.0;              // equation coefficients         
+    root_1 = 0.0, root_2 = 0.0;             // root solutions
+    solution = 0;			                
+    buffer = malloc(sizeof(char) * 100);  
     counter = 1;                             
 
+    // Begin to log output of the program
     log_output("============================================================");
     log_output("=");
     log_output("=");
@@ -25,7 +24,7 @@ int main() {
     log_output("=");
     log_output("=");
     log_output("============================================================");
-    log_output("Team Members: Ali, Nathan, Xavier!");
+    log_output("Team Members: Ali Itani, Nathan Hileman, Xavier Gray");
     log_output("Enjoy!\n\n\n");
     
 
@@ -35,6 +34,7 @@ int main() {
     // Checks if the prompt is a command to quit program. 
     int prompt = strncmp(input, "q", 1);
    
+   // While the user doesn't input "q" the program will continue to run
     while(prompt != 0) {
 
         // Log question number.
@@ -64,21 +64,19 @@ int main() {
         if ( ret == -1 ) {
             
             // Log the result of validate line function to file.
-
             log_output("ERROR: Input is Invalid!");
             
             return -1;
+
         } else {
             
             // Log result of validate line to file. 
-        
             log_output("Result: Input is Valid!");            
              
             char message[1024];
             sprintf(message, "Numbers are: [a] = %.7lf [b] =  %.7lf and [c] %.7lf\n", a, b, c);
 
             log_output(message);
-
         }
 
         //Q Solve Function
@@ -91,6 +89,7 @@ int main() {
             log_output("ERROR: Operation Failed!");
 
             return -1;
+
         } else {
         
             log_output("Result: Operation was Successful!");
@@ -98,6 +97,7 @@ int main() {
             // Format line function. 
             log_output("Format Line Function: ");
             log_output("==================="); 
+
             // Struct to store results of roots that will be sent to format line and outline functions.
             struct out_args final_args;
             final_args.a = a;
@@ -115,6 +115,7 @@ int main() {
             // Format line function. 
             log_output("Outline Function: ");
             log_output("==================="); 
+
             if (outline(final_args.output_string) != 0){
                 log_output("outline failed!");
                 log_output(final_args.output_string);
@@ -123,8 +124,7 @@ int main() {
             
             //sprintf(buffer, "Answers:\nRoot(1)= %.7f\nRoot(2)= %.7f", root_1, root_2);     // write solutions to an output buffer 
             
-            //log_output(buffer);     
-            
+            //log_output(buffer);       
         }
 
         // Prompt the user for another set of numbers. 

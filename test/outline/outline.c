@@ -1,16 +1,25 @@
 #include "outline.h"
 
-int outline(char * output){
+/**
+ * Outputs the result to the user
+ **/
+int outline(char * output) {
 	int ret;
-	if ((ret = printf("%s\n", output)) < 0){
+
+	if ((ret = printf("%s\n", output)) < 0) {
 	}
-	else
+
+	else {
 		ret = 0;
+    }
 
 	return ret;
 }
 
-int main(int argc, char const *argv[])
+/**
+ * Test case environment
+ * */
+int main(int argc, char const *argv[]) 
 {
 	int ret;	// variable for return values
     cunit_init();

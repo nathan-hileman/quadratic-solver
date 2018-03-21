@@ -1,8 +1,8 @@
-Dir Description
+Description
 ======================
 A finished version of q solve function
 
-Inside the Dir includes:
+Inside this directory:
 - makefile
 - README.md
 - q_solve.c

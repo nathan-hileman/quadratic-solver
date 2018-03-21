@@ -1,8 +1,8 @@
-Dir Description:
+Description:
 ======================
 A finished version of the format line function.
 
-Inside the Dir includes:
+Inside this directory:
 - makefile
 - README.md
 - format_line.c

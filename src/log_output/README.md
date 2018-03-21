@@ -1,8 +1,8 @@
-Dir Description:
+Description:
 ======================
 A finished version of the log output function.
 
-Inside the Dir includes:
+Inside this directory:
 - makefile
 - README.md
 - log_output.c

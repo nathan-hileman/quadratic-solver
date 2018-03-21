@@ -8,31 +8,30 @@
 /* Function that implements the quadratic equation.
  * Takes floats a, b, and c from user input and uses them in the equation.
  */
-int q_solve(float a, float b, float c, float *root_1, float *root_2, int *solution)
-{   
+int q_solve(float a, float b, float c, float *root_1, float *root_2, int *solution) {   
     
-    /* Declaration of Variables */
+    // Declaration of Variables
     float disc;  // discriminant
  
-    /* Equation for the Discriminant */
+    // Equation for the Discriminant
     disc = (b * b) - (4 * a * c);
     
-    /* Discriminant Positive, Real Number Solution */
+    // Discriminant Positive, Real Number Solution
     if (disc > 0) {
         
         printf("\tTwo real root solutions.\n");
   
-        /* Calculate Solution of Both Roots */
+        // Calculate Solution of Both Roots
         *root_1 = (-b + sqrt(disc)) / (2 * a);
         *root_2 = (-b - sqrt(disc)) / (2 * a);
 
         printf("\tRoots of quadratic equation are %.7f and %.7f\n",  root_1[0], root_2[0]);
 
-    } else if (disc == 0) {  /* Discriminant Zero, One Real Double Root Solution */
+    } else if (disc == 0) {  // Discriminant Zero, One Real Double Root Solution
         
         printf("\tReal double root solution.\n");
  
-        /* Calculate Single Double Root Solution */
+        // Calculate Single Double Root Solution
         *root_1 = -b / (2 * a);
         *root_2 = b / (2 * a);
 
@@ -40,7 +39,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
  
         return 0;
         
-    } else {    /* Discriminant Negative, Complex Number Solution (IGNORE) */
+    } else {    // Discriminant Negative, Complex Number Solution (IGNORE)
         
         printf("\tComplex roots. No real solution.\n");
 
@@ -50,10 +49,10 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
     return 0;
 }
 
-/* Main controller for unit testing purposes */
+/* Test case environment */
 int main(int argc, char ** argv)
 {
-    /* Initialize the unit testing framework and variables */
+    // Initialize the unit testing framework and variables
     float a, b, c = 0;
     float root_1, root_2 = 0;
     int solution = 0;

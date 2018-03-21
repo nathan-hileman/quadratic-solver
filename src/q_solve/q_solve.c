@@ -15,8 +15,8 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
     // Equation for the discriminant.
     disc = (b * b) - (4 * a * c);
     
+    // Discriminant positive, Real-Number solution. 
     if (disc > 0) { 
-        // Discriminant positive, Real-Number solution. 
         
         log_output("Result: Two real root solutions.");
   	    
@@ -28,10 +28,10 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
         *root_2 = (-b - sqrt(disc)) / (2 * a);
 
         // printf("Roots of quadratic equation are %.7f and %.7f\n",  root_1[0], root_2[0]);
-
-        
-    } else if (disc == 0) {  
-        // Discriminant Zero, One Real Double Root Solution.
+    }
+    
+    // Discriminant Zero, One Real Double Root Solution.
+    else if (disc == 0) {      
         
         // printf("Real double root solution.\n");
         log_output("Result: Real double root solution.");
@@ -46,11 +46,11 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
         // printf("Root of quadratic equation is ±%.7f\n", root_1[0]);
  
         return 0;
-        
-        
-    } else { 
-        // Discriminant Negative, Complex Number Solution (IGNORE).
-        
+    } 
+    
+    // Discriminant Negative, Complex Number Solution (IGNORE).
+    else { 
+
         // printf("Complex roots. No real solution.\n");
         log_output("Result: Complex root, No real solution.");
 

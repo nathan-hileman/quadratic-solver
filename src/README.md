@@ -1,8 +1,14 @@
 # Source
 
-<p>Author(s): Ali Itani, Nathan Hileman, and Xavier Gray</p>
+Description
+=============
+Source code and header files necessary for the quadratic solver
 
-<p>Description: Source code and header files necessary for the quadratic solver</p>
+
+Authors
+========
+Ali Itani, Nathan Hileman, and Xavier Gray
+
 
 Main: quad_solver
 
