@@ -6,8 +6,8 @@
 #include <stdlib.h>
 #include <string.h>     
 #include <math.h> 
-#include "validate_line.h"
-#include "../log_output/log_output.h"
+#include "../includes/validate_line.h"
+#include "../includes/log_output.h"
 #include "ctype.h"
 
 /* Function that checks if an input is empty. */

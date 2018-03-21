@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "log_output.h"
+#include "../includes/log_output.h"
 
 /**
 * Logs a message to a file - log.txt

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
-#include "q_solve.h"
-#include "../log_output/log_output.h"
+#include "../includes/q_solve.h"
+#include "../includes/log_output.h"
 
 /* *
  * Function that implements the quadratic equation.

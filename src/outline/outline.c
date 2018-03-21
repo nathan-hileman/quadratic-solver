@@ -1,4 +1,4 @@
-#include "outline.h"
+#include "../includes/outline.h"
 
 int outline(char * output){
 	log_output("Entering outline");
