@@ -101,6 +101,9 @@ int main() {
         
             log_output("Result: Operation was Successful!");
             
+            // Format line function. 
+            log_output("Format Line Function: ");
+            log_output("==================="); 
             // Struct to store results of roots that will be sent to format line and outline functions.
             struct out_args final_args;
             final_args.a = a;
@@ -115,6 +118,9 @@ int main() {
                 return -1;
             }
             
+            // Format line function. 
+            log_output("Outline Function: ");
+            log_output("==================="); 
             if (outline(final_args.output_string) != 0){
                 log_output("outline failed!");
                 log_output(final_args.output_string);
