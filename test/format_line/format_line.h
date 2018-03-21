@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include "../cunit.h"   // for unit testing
 
 /* struct for holding the arguments to format_line */
 struct out_args {
