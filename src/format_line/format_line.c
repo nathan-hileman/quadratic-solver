@@ -30,7 +30,8 @@ int format_line(struct out_args *args) {
 		ret = ((sprintf(args->output_string, "a = %.7f, b = %.7f, and c = %.7f produces a Single Double Root Solution\n\t root = +-%.7f",
 			args->a, args->b, args->c, args->root_1)) < 0 ? 1 : 0);
 	}
-	
+	if (ret == 1)
+		log_output("Failed to generate output_string\n");
 	return ret;
 }
 

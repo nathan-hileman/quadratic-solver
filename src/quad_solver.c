@@ -110,35 +110,20 @@ int main() {
             final_args.root_2 = root_2;
             final_args.solution = solution;
             
-
-
-
-
-            // TO-DO: these are not done yet
-
-            // if (format_line(&final_args) != 0) {
-            //     log_output("Format line failed!");
-            //     return -1;
-            // }
+            if (format_line(&final_args) != 0) {
+                log_output("Format line failed!");
+                return -1;
+            }
             
-            // if (outline(final_args.output_string) != 0){
-            //     log_output("outline failed!");
-            //     log_output(final_args.output_string);
-            //             return -1;
-            // }
+            if (outline(final_args.output_string) != 0){
+                log_output("outline failed!");
+                log_output(final_args.output_string);
+                        return -1;
+            }
             
-
-
-
-
-            /* 
-                
-                remove this when outline and format line are done 
-                
-            */
-            sprintf(buffer, "Answers:\nRoot(1)= %.7f\nRoot(2)= %.7f", root_1, root_2);     // write solutions to an output buffer 
+            //sprintf(buffer, "Answers:\nRoot(1)= %.7f\nRoot(2)= %.7f", root_1, root_2);     // write solutions to an output buffer 
             
-            log_output(buffer);     
+            //log_output(buffer);     
             
         }
 
