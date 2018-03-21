@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include "../log_output/log_output.h"
+#include "log_output.h"
 
 /* struct for holding the arguments to format_line */
 struct out_args {
