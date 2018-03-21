@@ -1,20 +1,14 @@
-<<<<<<< HEAD
-Author(s): Ali Itani
-Dir Description: A finished version of the read line function
-=======
-Log Output
-===========
-log_output.c
->>>>>>> c941c30380a797b8c2e5f994478a7f007e993393
+Dir Description:
+======================
+A finished version of the log output function.
 
-Purpose:
-the main purpose of this function is to take a message from the program and writes the message or logs it to a file.
-<<<<<<< HEAD
+Inside the Dir includes:
+- makefile
+- README.md
+- log_output.c
+- log_output.h
+- log_output.o
 
-Overview:
-    The source code was used as part of the quad_solver project.
-
-
-Team: Ali, Nathan, Xavier.
-=======
->>>>>>> c941c30380a797b8c2e5f994478a7f007e993393
+Overview & Purpose:
+======================
+The function log_out takes a char variable as a message and logs it to a text file.

@@ -1,9 +1,3 @@
-/**
-* Read Line
-* 2/4/2018
-* Prompts the user for input
-*/
-
 #include <stdio.h>
 #include <stdlib.h>
 #include "read_line.h"
@@ -14,13 +8,13 @@
 */
 char *read_line() {
     
-    // allocate memory for the input buffer
+    // Allocate memory for the input buffer. 
     
     char *input = malloc(sizeof(char) * 100);   
     
     printf("Enter values for a, b, and c: ");
     
-    // read the line of input from user from stdin
+    // Read the line of input from user from stdin.
     
     fgets(input, sizeof(char) * 100, stdin);    
 

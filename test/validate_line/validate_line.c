@@ -1,7 +1,3 @@
-/*
-    Author: Ali Itani
-*/
-
 #include <stdio.h> // needed
 #include <stdlib.h> // needed
 #include <string.h> // for strtok() and more
@@ -9,14 +5,41 @@
 #include "validate_line.h"
 #include "../cunit.h" // for unit testing
 
-// function that checks if an input is empty
-
+/* function that checks if an input is empty */
 int is_empty(char * line) { 
     return line[0] == '\n';
 }
 
-// checks whether the arguments contain numbers or characters 
 
+/* Function that trims trailing white spaces. */
+char *trimwhitespace(char *str) {
+    char *end;
+
+    // Trim leading space
+    while (isspace((unsigned char)*str)){ 
+        str++;
+    }
+        
+    // All spaces?
+    if (*str == 0) {  
+        return str;
+    }
+
+    // Trim trailing space
+    end = str + strlen(str) - 1;
+    while(end > str && isspace((unsigned char)*end)) {
+        end--;
+    }
+
+    // Write new null terminator
+    *(end+1) = 0;
+
+    // return result 
+    return str;
+}
+
+
+/* checks whether the arguments contain numbers or characters  */
 int is_number(char * result) {
     
     char * ptr;
@@ -32,20 +55,23 @@ int is_number(char * result) {
     return 0;
 }
 
-// validator function that checks for possible errors and reports back to user with a result
-
+/* Validator function that checks for possible errors and reports back to user with a result */
 int check_validation(char * line, int n, float * a, float * b, float * c) {
+    
     // checks if line is empty using [is_empty] function
     int ret  = is_empty(line);
+    char * new_line = trimwhitespace(line);
+
     if ( ret ){
-        printf("Error: Line is empty.\n");
-        return -1; // or return -1 doesnt matter, i like exit more...
+
+        log_output("Error: Line is empty.\n");
+
+        return -1; 
    }
 
 
     // splits the string with values
-
-    char * numbers = strtok(line, " ");
+    char * numbers = strtok(new_line, " ");
     char * results[3];
     int i = 0;
 
@@ -60,27 +86,26 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     
     // checks if there are no missing arguments 
     if (i < 3) {
-        printf("Error: Missing arguments of a, b, c.\n");
+        log_output("Error: Missing arguments of a, b, c.\n");
         return -1;
     }
     
     results[2] = strtok(results[2], "\n");
         
     // checks if numbers are all valid
-    // int ret1 = is_number(results[0]);
-    // int ret2 = is_number(results[1]);
-    // int ret3 = is_number(results[2]);
+    int ret1 = is_number(results[0]);
+    int ret2 = is_number(results[1]);
+    int ret3 = is_number(results[2]);
     
     if (is_number(results[0]) == 0 && is_number(results[1]) == 0 && is_number(results[2]) == 0) {
-        
+        // number are valid. Assign them to each variable respectively.
         *a = atof(results[0]);
         *b = atof(results[1]);
         *c = atof(results[2]);
         
-        printf("Numbers are valid they are: %.7lf %.7lf %.7lf\n", a[0], b[0], c[0]);
-
     } else {
-        printf("Error: Not a number, character was inserted instead.\n");        
+        
+        log_output("Error: Not a number, character was inserted instead.\n");        
         return -1;
     }
 
@@ -142,8 +167,7 @@ int main(int argc, char ** argv) {
     // and unit test did its job.
     assert_eq("\nCUNIT ERROR: Reason...", ret, 0);
 
-    
-
+    // free memory when done
     free(line);
     printf("\n\n");
 

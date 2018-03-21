@@ -9,15 +9,15 @@ int log_output(char * message) {
 
 	FILE * fp;
 	
-    // fopens file to append a message
+    // Function fopen opens a file to append a message to. 
 
 	fp = fopen("log.txt", "a"); 
 
-	// using fprintf to log a formated output to stream
+	// Function fprintf logs a message to stream. 
 
 	fprintf(fp, "%s\n", message);
 
-	// close file
+	// Close file when done appending. 
 
 	fclose(fp);
 	

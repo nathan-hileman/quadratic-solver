@@ -2,47 +2,55 @@
     Author: Ali Itani
 */
 
-#include <stdio.h> // needed
-#include <stdlib.h> // needed
-#include <string.h> // for strtok() and more
-#include <math.h> // for isnan()
+#include <stdio.h> 
+#include <stdlib.h>
+#include <string.h>     
+#include <math.h> 
 #include "validate_line.h"
 #include "../log_output/log_output.h"
 #include "ctype.h"
 
-// function that checks if an input is empty
+/* Function that checks if an input is empty. */
 int is_empty(char * line) { 
+    // return result
     return line[0] == '\n';
 }
 
-// trims trailing white space
+/* Function that trims trailing white spaces. */
 char *trimwhitespace(char *str) {
-  char *end;
+    char *end;
 
-  // Trim leading space
-  while(isspace((unsigned char)*str)) str++;
+    // Trim leading space
+    while (isspace((unsigned char)*str)){ 
+        str++;
+    }
+        
+    // All spaces?
+    if (*str == 0) {  
+        return str;
+    }
 
-  if(*str == 0)  // All spaces?
+    // Trim trailing space
+    end = str + strlen(str) - 1;
+    while(end > str && isspace((unsigned char)*end)) {
+        end--;
+    }
+
+    // Write new null terminator
+    *(end+1) = 0;
+
+    // return result 
     return str;
-
-  // Trim trailing space
-  end = str + strlen(str) - 1;
-  while(end > str && isspace((unsigned char)*end)) end--;
-
-  // Write new null terminator
-  *(end+1) = 0;
-
-  return str;
 }
 
-// checks whether the arguments contain numbers or characters 
+/* Function is_number checks whether the arguments contain numbers or characters. */
 int is_number(char * result) {
     
     char * ptr;
     double ret;
 
 
-    // strtod checks input if its a number or a character.
+    // Function strtod checks input if its a number or a character. 
     ret = strtod(result, &ptr);
     if(strlen(ptr) > 0) {
         return -1;
@@ -51,15 +59,21 @@ int is_number(char * result) {
     return 0;
 }
 
-// validator function that checks for possible errors and reports back to user with a result
+/** 
+ * Validator function that checks for possible errors. 
+ * Returns an int with the possible result.
+ * */
 int check_validation(char * line, int n, float * a, float * b, float * c) {
     
     // checks if line is empty using [is_empty] function
     int ret  = is_empty(line);
     char * new_line = trimwhitespace(line);
+
     if ( ret ){
+
         log_output("Error: Line is empty.\n");
-        return -1; // or return -1 doesnt matter, i like exit more...
+
+        return -1; 
    }
 
 
@@ -91,17 +105,11 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     int ret3 = is_number(results[2]);
     
     if (is_number(results[0]) == 0 && is_number(results[1]) == 0 && is_number(results[2]) == 0) {
-        
+        // number are valid. Assign them to each variable respectively.
         *a = atof(results[0]);
         *b = atof(results[1]);
         *c = atof(results[2]);
         
-        // once numbers are checked and valid log to log_output()
-        char * message[50];
-        sprintf(message,"Numbers are valid they are: %.7lf %.7lf %.7lf\n", a[0], b[0], c[0]);
-        
-        log_output(message);
-
     } else {
         
         log_output("Error: Not a number, character was inserted instead.\n");        

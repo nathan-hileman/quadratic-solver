@@ -9,61 +9,99 @@
 #include "./outline/outline.h"
 #include "string.h"
 
+
+
 /**
-* Controller for the quadratic equation solver
+* Controller for the Command Line Quadratic Solver.
 */
 int main() {
     
-    /* Declare and Initialize Variables */
-    int n = 100;
-    float a = 0.0, b = 0.0, c = 0.0;                // input variables for quadratic equation
-    float root_1 = 0.0, root_2 = 0.0;               // root solution(s) to quadratic equation
-    int solution = 0;			            // type of solution
-    char * buffer = malloc(sizeof(char) * 100);     // output buffer
+    // Declared and initialized variables.
+    n = 100;                                  
+    a = 0.0, b = 0.0, c = 0.0;                
+    root_1 = 0.0, root_2 = 0.0;               
+    solution = 0;			                  
+    buffer = malloc(sizeof(char) * 100);     
+    counter = 1;                             
 
     log_output("============================================================");
-    log_output("\nCommand Line Quadratic Solver\n");
-
-
-    /* Read Line of Input */
-    char * input = read_line();         // reads a,b,c from user input
+    log_output("=");
+    log_output("=");
+    log_output("=================Command Line Quadratic Solver==============");
+    log_output("=");
+    log_output("=");
+    log_output("============================================================");
+    log_output("Team Members: Ali, Nathan, Xavier!");
+    log_output("Enjoy!\n\n\n");
     
-    int retur = strncmp(input, "q", 1);
+
+    // Prompts the user for the numbers.
+    char * input = read_line();        
+    
+    // Checks if the prompt is a command to quit program. 
+    int prompt = strncmp(input, "q", 1);
    
-    while(retur != 0) {
-        log_output("read_line:   ");     
-        log_output(input);                  // write input to log file
+    while(prompt != 0) {
 
+        // Log question number.
+        char buff[100];
+        sprintf(buff, "\n\nQestion %d:", counter);
+        log_output(buff);
+        log_output("============================\n\n");
 
-        /* Validate Input */
-        log_output("check_validation:   ");
+        // Read line function.
+        log_output("Read Line Function: ");     
+        log_output("===================");        
 
-        int ret = check_validation(input, n, &a, &b, &c);   // validation flag
+        // Logs result of read line to file. 
+        char read_line_buff[1024];
+        sprintf(read_line_buff, "Line read from user: %s", input);
 
+        log_output(read_line_buff);                  
+
+        // Validate line function. 
+        log_output("Validate Line Function: ");
+        log_output("===================");        
+        
+        // Flag for validate line. 
+        int ret = check_validation(input, n, &a, &b, &c);   
+
+        // Check if the flag is valid.
         if ( ret == -1 ) {
+            
+            // Log the result of validate line function to file.
 
-            log_output("Invalid Input!");
+            log_output("ERROR: Input is Invalid!");
             
             return -1;
-
         } else {
+            
+            // Log result of validate line to file. 
         
-            log_output("Input Valid!");
+            log_output("Result: Input is Valid!");            
+             
+            char message[1024];
+            sprintf(message, "Numbers are: [a] = %.7lf [b] =  %.7lf and [c] %.7lf\n", a, b, c);
+
+            log_output(message);
+
         }
 
+        //Q Solve Function
+        log_output("Q Solve Function: ");
+        log_output("===================");
 
-        /* Ingest Into Quadratic Equation and Solve */
-        log_output("\nq_solve:    ");
+        // Check if q_solve returned an error
+        if ( q_solve(a, b, c, &root_1, &root_2, &solution) != 0 ) {   
+             
+            log_output("ERROR: Operation Failed!");
 
-        if ( q_solve(a, b, c, &root_1, &root_2, &solution) != 0 ) {    // check if q_solve returned an error
-        
-            log_output("q_solve Failed!");   
             return -1;
-
         } else {
         
-            log_output("q_solve Successful!");
+            log_output("Result: Operation was Successful!");
             
+            // Struct to store results of roots that will be sent to format line and outline functions.
             struct out_args final_args;
             final_args.a = a;
             final_args.b = b;
@@ -72,7 +110,11 @@ int main() {
             final_args.root_2 = root_2;
             final_args.solution = solution;
             
-            // guessing these are not done yet
+
+
+
+
+            // TO-DO: these are not done yet
 
             // if (format_line(&final_args) != 0) {
             //     log_output("Format line failed!");
@@ -84,18 +126,36 @@ int main() {
             //     log_output(final_args.output_string);
             //             return -1;
             // }
-
-            // sprintf(buffer, "The roots are root 1: %.7f, root 2: %.7f", root_1, root_2);     // write solutions to an output buffer 
             
-            log_output(buffer);     // write output buffer to log file
+
+
+
+
+            /* 
+                
+                remove this when outline and format line are done 
+                
+            */
+            sprintf(buffer, "Answers:\nRoot(1)= %.7f\nRoot(2)= %.7f", root_1, root_2);     // write solutions to an output buffer 
+            
+            log_output(buffer);     
             
         }
-        // prompt the user for another set of numbers
-        input = read_line();         // reads a,b,c from user input
-        retur = strncmp(input, "q", 1);
-    }
-    free(buffer);
 
+        // Prompt the user for another set of numbers. 
+
+        // Using read line function. 
+        input = read_line(); 
+
+        // Checking user prompt value.
+        prompt = strncmp(input, "q", 1);
+
+        // Incrementing the number of questions.
+        counter++;
+    }
+
+    // Free buffer memory.
+    free(buffer);
 
     return 0;
 }

@@ -1,21 +1,14 @@
-<<<<<<< HEAD
-Author(s): 
-===========
-
 Dir Description:
-===========
-A finished version of the read line function
+======================
+A finished version of the read line function.
 
-Overview:
-===========
-=======
->>>>>>> c941c30380a797b8c2e5f994478a7f007e993393
-Read Line
-===========
-read_line.c
+Inside the Dir includes:
+- makefile
+- README.md
+- read_line.c
+- read_line.h
+- read_line.o
 
-Purpose:
-===========
-A module for the read line function.
-Prompts the user for input and reads the line they provided.
-Logs the input to a text file.
+Overview & Purpose: 
+======================
+The function read_line prompts the user for input and reads the line they provided, then it logs the input to a text file.

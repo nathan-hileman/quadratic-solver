@@ -15,16 +15,19 @@
 * Returns a string of user input.
 */
 char *read_line() {
-    char *input = malloc(sizeof(char) * 100);   // allocate memory for the input buffer
+    // allocate memory for the input buffer
+    char *input = malloc(sizeof(char) * 100);   
     
     printf("Enter values for a, b, and c: ");
     
-    fgets(input, sizeof(char) * 100, stdin);    // read the line of input
+    // read the line of input
+
+    fgets(input, sizeof(char) * 100, stdin);    
 
     return input;
 }
 
-// main method for testing 
+/* Main method for testing. */
 
 int main() {
 
@@ -32,8 +35,7 @@ int main() {
 
     char * line = read_line();
     
-    // if nothing was inserted should assert_neq and return
-    // error if line is 0
+    // if nothing was inserted should assert_neq and return error if line is 0
 
     assert_neq(line, 1, (int) strlen(line));
 

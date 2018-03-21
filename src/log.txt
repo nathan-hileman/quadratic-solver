@@ -1,16 +1,78 @@
 ============================================================
+=
+=
+=================Command Line Quadratic Solver==============
+=
+=
+============================================================
+Team Members: Ali, Nathan, Xavier!
+Enjoy!
 
-Command Line Quadratic Solver
 
-read_line:   
-3 6 4
 
-check_validation:   
-Numbers are valid they are: 3.0000000 6.0000000 4.0000000
 
-Input Valid!
 
-q_solve:    
+Qestion 1:
+============================
+
+
+Read Line Function: 
+===================
+Line read from user: 8 7 6
+
+Validate Line Function: 
+===================
+Result: Input is Valid!
+Numbers are: [a] = 8.0000000 [b] =  7.0000000 and [c] 6.0000000
+
+Q Solve Function: 
+===================
 Complex root. No real solution.
-q_solve Successful!
+Result: Operation was Successful!
+Answers:
+Root(1)= 0.0000000
+Root(2)= 0.0000000
 
+
+Qestion 2:
+============================
+
+
+Read Line Function: 
+===================
+Line read from user: 8 9 10
+
+Validate Line Function: 
+===================
+Result: Input is Valid!
+Numbers are: [a] = 8.0000000 [b] =  9.0000000 and [c] 10.0000000
+
+Q Solve Function: 
+===================
+Complex root. No real solution.
+Result: Operation was Successful!
+Answers:
+Root(1)= 0.0000000
+Root(2)= 0.0000000
+
+
+Qestion 3:
+============================
+
+
+Read Line Function: 
+===================
+Line read from user: 10 30 48
+
+Validate Line Function: 
+===================
+Result: Input is Valid!
+Numbers are: [a] = 10.0000000 [b] =  30.0000000 and [c] 48.0000000
+
+Q Solve Function: 
+===================
+Complex root. No real solution.
+Result: Operation was Successful!
+Answers:
+Root(1)= 0.0000000
+Root(2)= 0.0000000
