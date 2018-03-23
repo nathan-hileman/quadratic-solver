@@ -255,3 +255,39 @@ Question 3:
 Exiting program...
 
 
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Question 1:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 444.1234567 333.987654321 1.23456789
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 444.1234436, [b] =  333.9876404, and [c] 1.2345679
+
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	a = 444.123444, b = 333.987640, and c = 1.234568 produces a double solution
+	root 1 = -0.0037148, root 2 = -0.7483006
+	Operation was successful!
+
+Exiting program...
+
+
