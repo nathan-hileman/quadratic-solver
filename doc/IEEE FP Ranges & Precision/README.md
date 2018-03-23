@@ -13,11 +13,9 @@ Overview:
       <li>i was reading online (link: https://math.stackexchange.com/questions/311382/solving-a-quadratic-equation-with-precision-when-using-floating-point-variables) we can use the Citardauq Formula to have higher precision and the roots to a point where there is no loss of precision in one of the roots and also near high precision for the other.
     </li>
    </ul>
+   
 # Checking Inf, NaN, and normalized numbers:
-    <ul>
-	<li>This page has macros for checking all of it
-	See this page: https://www.gnu.org/software/libc/manual/html_node/Floating-Point-Classes.html#Floating-Point-Classes
-	</li>	
-    </ul>
+This page has macros for checking all of it
+See this page: https://www.gnu.org/software/libc/manual/html_node/Floating-Point-Classes.html#Floating-Point-Classes
 	
  <p>Team Members: Ali Itani, Nathan Hileman, Xavier Gray</p>   
