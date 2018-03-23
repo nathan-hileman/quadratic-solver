@@ -1,0 +1,257 @@
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Question 1:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 8.678 0 123.4560923
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 8.6780005, [b] =  0.0000000, and [c] 123.4560928
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	There is no real solution for a = 8.678000, b = 0.000000, and c = 123.456093
+	Operation was successful!
+
+Question 2:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1 999.9999 13.4
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.0000000, [b] =  999.9998779, and [c] 13.3999996
+
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	a = 1.000000, b = 999.999878, and c = 13.400000 produces a double solution
+	root 1 = -0.0134079, root 2 = -999.9864502
+	Operation was successful!
+
+Exiting program...
+
+
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Exiting program...
+
+
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Question 1:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1 2 3
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.0000000, [b] =  2.0000000, and [c] 3.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	There is no real solution for a = 1.000000, b = 2.000000, and c = 3.000000
+	Operation was successful!
+
+Exiting program...
+
+
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Question 1:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1 2 3
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.0000000, [b] =  2.0000000, and [c] 3.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	There is no real solution for a = 1.000000, b = 2.000000, and c = 3.000000
+	Operation was successful!
+
+Question 2:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 2 8 4
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 2.0000000, [b] =  8.0000000, and [c] 4.0000000
+
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	a = 2.000000, b = 8.000000, and c = 4.000000 produces a double solution
+	root 1 = -0.5857865, root 2 = -3.4142137
+	Operation was successful!
+
+Exiting program...
+
+
++----------------------------------------------------------+
+|               Command Line Quadratic Solver              |
+|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |
+|                            v1.0                          |
++----------------------------------------------------------+
+
+Question 1:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 9.3 2.3 5.55
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 9.3000002, [b] =  2.3000000, and [c] 5.5500002
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	There is no real solution for a = 9.300000, b = 2.300000, and c = 5.550000
+	Operation was successful!
+
+Question 2:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1.34564 494.222 9.3253532
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.3456399, [b] =  494.2219849, and [c] 9.3253536
+
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	a = 1.345640, b = 494.221985, and c = 9.325354 produces a double solution
+	root 1 = -0.0188654, root 2 = -367.2576904
+	Operation was successful!
+
+Question 3:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1.3456400 494.2220000 9.32535320
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.3456399, [b] =  494.2219849, and [c] 9.3253536
+
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	a = 1.345640, b = 494.221985, and c = 9.325354 produces a double solution
+	root 1 = -0.0188654, root 2 = -367.2576904
+	Operation was successful!
+
+Exiting program...
+
+

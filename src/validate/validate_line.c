@@ -73,7 +73,7 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     char * new_line = trimwhitespace(line);
 
     if (ret) {
-        log_output("Error: Line is empty.\n");
+        log_output("\tERROR: Line is empty.\n");
         return -1; 
     }
 
@@ -93,7 +93,7 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     
     // checks if there are no missing arguments 
     if (i < 3) {
-        log_output("Error: Missing arguments of a, b, c.\n");
+        log_output("\tERROR: Missing arguments of a, b, c.\n");
         return -1;
     }
     
@@ -113,7 +113,7 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
         *c = atof(results[2]);
         
     } else { 
-        log_output("Error: Not a number, character was inserted instead.\n");        
+        log_output("\tERROR: Not a number, character was inserted instead.\n");        
         return -1;
     }
 

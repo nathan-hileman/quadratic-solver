@@ -4,8 +4,6 @@
  * out_args: see format_line.h for details
  */
 int format_line(struct out_args *args) {
-	
-	log_output("Entering format_line");
 
 	int ret = 0;
 	
@@ -37,14 +35,14 @@ int format_line(struct out_args *args) {
 	}
 
 	else {
-		log_output("format_line was passed a solution that is not between 0 and 2");
+		log_output("\tERROR: format_line was passed a solution that is not between 0 and 2");
 		
 		ret = 1; // solution should only be between 0 and 2
 	}
 
 	// Failed to generate output
 	if (ret == 1) {
-		log_output("Failed to generate output_string\n");
+		log_output("\tERROR: Failed to generate output_string\n");
 	}
 
 	return ret;

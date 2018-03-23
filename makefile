@@ -9,6 +9,10 @@ program:
 run:
 	@cd src; ./quad_solver;
 
+# Gives the user a list of commands for make
+help:
+	@cat README.md;
+
 # Compresses the executable into a tar ball
 deploy:
 	@tar -cvf quad_solver.tar src/quad_solver;

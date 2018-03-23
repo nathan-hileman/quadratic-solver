@@ -18,7 +18,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
     // Discriminant positive, Real-Number solution. 
     if (disc > 0) { 
         
-        log_output("Result: Two real root solutions.");
+        log_output("\tResult: Two real root solutions.");
   	    
         // Set solution for format_line function. 
 	    *solution = 1;
@@ -34,7 +34,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
     else if (disc == 0) {      
         
         // printf("Real double root solution.\n");
-        log_output("Result: Real double root solution.");
+        log_output("\tResult: Real double root solution.");
 
 	    // Set solution for format_line 
  	    *solution = 2;
@@ -52,7 +52,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
     else { 
 
         // printf("Complex roots. No real solution.\n");
-        log_output("Result: Complex root, No real solution.");
+        log_output("\tResult: Complex root, No real solution.");
 
 	    // Set solution for format line
 	    *solution = 0;

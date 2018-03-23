@@ -11,7 +11,7 @@ char *read_line() {
     // Allocate memory for the input buffer. 
     char *input = malloc(sizeof(char) * 100);   
     
-    printf("Enter values for a, b, and c: ");
+    printf("\nEnter values for a, b, and c [q to quit program]: ");
     
     // Read the line of input from user from stdin.
     fgets(input, sizeof(char) * 100, stdin);    
