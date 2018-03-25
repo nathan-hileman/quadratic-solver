@@ -74,6 +74,8 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
 
     if (ret) {
         log_output("\tERROR: Line is empty.\n");
+        printf("\nERROR: No input. Please provide numeric values for a, b, and c.\n");
+        printf("\n------------------------------------------------------------\n"); 
         return -1; 
     }
 
@@ -94,6 +96,8 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     // checks if there are no missing arguments 
     if (i < 3) {
         log_output("\tERROR: Missing arguments of a, b, c.\n");
+        printf("\nERROR: Missing arguments. Please provide numeric values for a, b, and c.\n");
+        printf("\n------------------------------------------------------------\n"); 
         return -1;
     }
     
@@ -106,14 +110,24 @@ int check_validation(char * line, int n, float * a, float * b, float * c) {
     int ret3 = is_number(results[2]);
     
     if (is_number(results[0]) == 0 && is_number(results[1]) == 0 && is_number(results[2]) == 0) {
-        
+
         // number are valid. Assign them to each variable respectively.
         *a = atof(results[0]);
         *b = atof(results[1]);
         *c = atof(results[2]);
-        
-    } else { 
-        log_output("\tERROR: Not a number, character was inserted instead.\n");        
+
+        if (*a == 0) {
+            log_output("\tResult: Equaiton not quadratic. Undefined solution.\n");
+            printf("\nCoefficient a = 0. The solution is undefined\n");
+            printf("\n------------------------------------------------------------\n"); 
+            return -1;
+        }
+    } 
+
+    else { 
+        log_output("\tERROR: Not a number, character was inserted instead.\n"); 
+        printf("\nERROR: Input not a number. Please provide numeric values for a, b, and c.\n\nExamples of valid input:\n12, 103.95, 0.0077\n");       
+        printf("\n------------------------------------------------------------\n"); 
         return -1;
     }
 

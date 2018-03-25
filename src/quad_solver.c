@@ -19,7 +19,8 @@ int main() {
     // Begin to log output of the program
     log_output("+----------------------------------------------------------+");
     log_output("|               Command Line Quadratic Solver              |");
-    log_output("|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |");
+    log_output("|        TEAM: Ali Itani, Nathan Hleman, Xavier Gray       |");
+    log_output("|                Kapenga Inc., LICENSE: GPL 2.0            |");
     log_output("|                            v1.0                          |");
     log_output("+----------------------------------------------------------+");
 
@@ -27,6 +28,7 @@ int main() {
     printf("+----------------------------------------------------------+\n");
     printf("|               Command Line Quadratic Solver              |\n");
     printf("|        Team: Ali Itani, Nathan Hleman, Xavier Gray       |\n");
+    printf("|                Kapenga Inc., LICENSE: GPL 2.0            |\n");
     printf("|                            v1.0                          |\n");
     printf("+----------------------------------------------------------+\n");
 
@@ -68,8 +70,6 @@ int main() {
             
             // Log the result of validate line function to file.
             log_output("\tERROR: Input is invalid!");
-            
-            return -1;
 
         } else {
             
@@ -80,9 +80,8 @@ int main() {
             sprintf(message, "\tCoefficients: [a] = %.7lf, [b] =  %.7lf, and [c] %.7lf\n", a, b, c);
 
             log_output(message);
-        }
 
-        //Q Solve Function
+             //Q Solve Function
         log_output("\tq_solve Function: ");
         log_output("\t=================");
 
@@ -131,9 +130,13 @@ int main() {
             
             //sprintf(buffer, "Answers:\nRoot(1)= %.7f\nRoot(2)= %.7f", root_1, root_2);     // write solutions to an output buffer 
             
-            //log_output(buffer);       
+            //log_output(buffer);  
+            printf("\n------------------------------------------------------------\n");     
         }
 
+        }
+
+       
         // Prompt the user for another set of numbers. 
 
         // Using read line function. 

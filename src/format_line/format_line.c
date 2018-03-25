@@ -14,7 +14,7 @@ int format_line(struct out_args *args) {
 	if (args->solution == 0) {
 		
 		// if sprintf fails, change the return value to 1
-		ret = ((sprintf(args->output_string, "There is no real solution for a = %f, b = %f, and c = %f", 
+		ret = ((sprintf(args->output_string, "\nThere is no solution for the coefficients:\n\ta = %f, b = %f, and c = %f", 
 			args->a, args->b, args->c)) < 0 ? 1 : 0);
 	} 
 
@@ -22,7 +22,7 @@ int format_line(struct out_args *args) {
 	else if (args->solution == 1) {
 	
 		// if sprintf fails, change the return value to 1
-		ret = ((sprintf(args->output_string, "a = %f, b = %f, and c = %f produces a double solution\n\troot 1 = %.7f, root 2 = %.7f",
+		ret = ((sprintf(args->output_string, "\nThere are two real solutions for coefficients:\n\ta = %f, b = %f, and c = %f\nSolutions:\n\troot 1 = %.7f\n\troot 2 = %.7f",
 				args->a, args->b, args->c, args->root_1, args->root_2)) < 0 ? 1 : 0);
 	}	
 
@@ -30,8 +30,8 @@ int format_line(struct out_args *args) {
 	else if (args->solution == 2) {
 
 		// if sprintf fails, change the return value to 1
-		ret = ((sprintf(args->output_string, "a = %.7f, b = %.7f, and c = %.7f produces a Single Double Root Solution\n\t root = +-%.7f",
-			args->a, args->b, args->c, args->root_1)) < 0 ? 1 : 0);
+		ret = ((sprintf(args->output_string, "\nThere is a real double root solution for coefficients:\n\ta = %.7f, b = %.7f, and c = %.7f\nSolution:\n\troot 1 = %.7f\n\troot 2 = %.7f",
+			args->a, args->b, args->c, args->root_1, args->root_2)) < 0 ? 1 : 0);
 	}
 
 	else {
@@ -48,3 +48,7 @@ int format_line(struct out_args *args) {
 	return ret;
 }
 
+// when the eqn isn't quadratic (yields nan, a is 0)
+// when there is only one soln (1 2 1)
+// infs
+// what type of error

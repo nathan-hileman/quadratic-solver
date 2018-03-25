@@ -41,7 +41,7 @@ int q_solve(float a, float b, float c, float *root_1, float *root_2, int *soluti
 
         // Calculate Single Double Root Solution 
         *root_1 = -b / (2 * a);
-        *root_2 = b / (2 * a);
+        *root_2 = -b / (2 * a);
 
         // printf("Root of quadratic equation is ±%.7f\n", root_1[0]);
  
