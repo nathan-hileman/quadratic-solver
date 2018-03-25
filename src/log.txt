@@ -10,6 +10,187 @@ Question 1:
 
 	read_line Function: 
 	===================
+	Line read from user: 3 4 5
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 3.0000000, [b] =  4.0000000, and [c] 5.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 3.000000, b = 4.000000, and c = 5.000000
+	Operation was successful!
+
+Question 2:
+============
+
+	read_line Function: 
+	===================
+	Line read from user:  1 1 1
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.0000000, [b] =  1.0000000, and [c] 1.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 1.000000, b = 1.000000, and c = 1.000000
+	Operation was successful!
+
+Question 3:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 0 0 0
+
+	validate_line Function: 
+	=======================
+	Result: Equaiton not quadratic. Undefined solution.
+
+	ERROR: Input is invalid!
+
+Question 4:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 213 222 555555
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 213.0000000, [b] =  222.0000000, and [c] 555555.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 213.000000, b = 222.000000, and c = 555555.000000
+	Operation was successful!
+
+Question 5:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 5 4 88
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 5.0000000, [b] =  4.0000000, and [c] 88.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 5.000000, b = 4.000000, and c = 88.000000
+	Operation was successful!
+
+Question 6:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1.5 858 11112215.55
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1.5000000, [b] =  858.0000000, and [c] 11112216.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 1.500000, b = 858.000000, and c = 11112216.000000
+	Operation was successful!
+
+Question 7:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 121 1 2
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 121.0000000, [b] =  1.0000000, and [c] 2.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 121.000000, b = 1.000000, and c = 2.000000
+	Operation was successful!
+
+Question 8:
+============
+
+	read_line Function: 
+	===================
 	Line read from user: 1 2 3
 
 	validate_line Function: 
@@ -33,38 +214,125 @@ There is no solution for the coefficients:
 	a = 1.000000, b = 2.000000, and c = 3.000000
 	Operation was successful!
 
-Question 2:
+Question 9:
 ============
 
 	read_line Function: 
 	===================
-	Line read from user: 0 1 1
+	Line read from user: 3 2 1
 
 	validate_line Function: 
 	=======================
-	Result: Equaiton not quadratic. Undefined solution.
+	Input is valid!
+	Coefficients: [a] = 3.0000000, [b] =  2.0000000, and [c] 1.0000000
 
-	ERROR: Input is invalid!
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
 
-Question 3:
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 3.000000, b = 2.000000, and c = 1.000000
+	Operation was successful!
+
+Question 10:
 ============
 
 	read_line Function: 
 	===================
-	Line read from user: a 2 2
+	Line read from user: 11 2222 555
 
 	validate_line Function: 
 	=======================
-	ERROR: Not a number, character was inserted instead.
+	Input is valid!
+	Coefficients: [a] = 11.0000000, [b] =  2222.0000000, and [c] 555.0000000
 
-	ERROR: Input is invalid!
+	q_solve Function: 
+	=================
+	Result: Two real root solutions.
+	Operation was successful!
 
-Question 4:
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There are two real solutions for coefficients:
+	a = 11.000000, b = 2222.000000, and c = 555.000000
+Solutions:
+	root 1 = -0.2500846
+	root 2 = -201.7499084
+	Operation was successful!
+
+Question 11:
 ============
 
 	read_line Function: 
 	===================
-	Line read from user: 1
+	Line read from user: 0.001 20.1
+
+	validate_line Function: 
+	=======================
+	ERROR: Missing arguments of a, b, c.
+
+	ERROR: Input is invalid!
+
+Question 12:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 0.001 112.225
+
+	validate_line Function: 
+	=======================
+	ERROR: Missing arguments of a, b, c.
+
+	ERROR: Input is invalid!
+
+Question 13:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: 1121.0 000111 222
+
+	validate_line Function: 
+	=======================
+	Input is valid!
+	Coefficients: [a] = 1121.0000000, [b] =  111.0000000, and [c] 222.0000000
+
+	q_solve Function: 
+	=================
+	Result: Complex root, No real solution.
+	Operation was successful!
+
+	format_line Function: 
+	=====================
+	Operation was successful!
+
+	outline Function: 
+	=================
+	
+There is no solution for the coefficients:
+	a = 1121.000000, b = 111.000000, and c = 222.000000
+	Operation was successful!
+
+Question 14:
+============
+
+	read_line Function: 
+	===================
+	Line read from user: cd ..
 
 	validate_line Function: 
 	=======================
