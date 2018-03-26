@@ -13,6 +13,16 @@ int format_line(struct out_args *args) {
 	 // allocate space for the output string
 	args->output_string = malloc(500);
 	
+
+	// check to see if the solution rounds to 0
+	if (args->root_1 <= -0)
+	{
+		args->root_1 = 0;
+	}
+	if (args->root_1 <= -0)
+	{
+		args->root_2 = 0;
+	}
 	// if the solution is complex, prepare a string stating that for the user
 	if (args->solution == 0) {
 		
