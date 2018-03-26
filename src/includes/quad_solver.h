@@ -1,3 +1,6 @@
+/* Command Line Quadratic Solver
+   TEAM: Ali Itani, Nathan Hleman, Xavier Gray
+   Kapenga Inc., LICENSE: GPL 2.0      */
 #include "read_line.h"
 #include "log_output.h"
 #include "validate_line.h"

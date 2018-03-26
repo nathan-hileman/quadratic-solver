@@ -1,3 +1,6 @@
+/* Command Line Quadratic Solver
+   TEAM: Ali Itani, Nathan Hleman, Xavier Gray
+   Kapenga Inc., LICENSE: GPL 2.0      */
 #include "format_line.h"
 
 /* Takes arguments from main and formats a string to be passed to outline

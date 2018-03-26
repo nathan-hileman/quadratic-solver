@@ -1,3 +1,6 @@
+/* Command Line Quadratic Solver
+   TEAM: Ali Itani, Nathan Hleman, Xavier Gray
+   Kapenga Inc., LICENSE: GPL 2.0      */
 #include <stdio.h> // needed
 #include <stdlib.h> // needed
 #include <string.h> // for strtok() and more

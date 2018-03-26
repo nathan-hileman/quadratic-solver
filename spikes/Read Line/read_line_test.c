@@ -1,3 +1,6 @@
+/* Command Line Quadratic Solver
+   TEAM: Ali Itani, Nathan Hleman, Xavier Gray
+   Kapenga Inc., LICENSE: GPL 2.0      */
 /**
 * Read Line
 * 2/4/2018

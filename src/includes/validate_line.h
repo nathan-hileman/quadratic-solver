@@ -1,3 +1,6 @@
+/* Command Line Quadratic Solver
+   TEAM: Ali Itani, Nathan Hleman, Xavier Gray
+   Kapenga Inc., LICENSE: GPL 2.0      */
 /* header file for validate_line.c inlcudes needed functions for this source code. */
 
 int is_empty(char * line);
